@@ -1,0 +1,17 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Tests",
+      "type": "shell",
+      "command": ".venv/bin/pytest -q",
+      "problemMatcher": []
+    },
+    {
+      "label": "Format",
+      "type": "shell",
+      "command": ".venv/bin/black . && .venv/bin/ruff check --fix .",
+      "problemMatcher": []
+    }
+  ]
+}

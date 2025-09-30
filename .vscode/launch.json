@@ -1,0 +1,21 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python: exécuter mon_projet.core",
+      "type": "python",
+      "request": "launch",
+      "module": "mon_projet.core",
+      "justMyCode": true
+    },
+    {
+      "name": "Pytest (déboguer les tests)",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/.venv/bin/pytest",
+      "args": ["-q"],
+      "console": "integratedTerminal",
+      "justMyCode": true
+    }
+  ]
+}
