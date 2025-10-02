@@ -1,4 +1,6 @@
 # servo
+[![Docs](https://github.com/boscherj/servo/actions/workflows/docs.yml/badge.svg)](https://github.com/boscherj/servo/actions/workflows/docs.yml)
+📘 [Consulter la documentation](https://boscherj.github.io/servo/)
 
 Environnement Python avec **uv**, layout `src/`, tests **pytest**, lint/format **ruff** + **black**, hooks **pre-commit**, et configuration **VS Code**.
 
