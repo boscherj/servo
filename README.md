@@ -11,3 +11,15 @@ uv venv --python 3
 source .venv/bin/activate
 uv pip install -r requirements.txt
 pre-commit install
+
+## Versions / Tags
+
+Ce dépôt utilise des **tags** pour marquer des états stables.
+
+- **v0.1.0-setup-ok** — setup fonctionnel : layout `src/`, installation editable, dépendances (pandas, pdfplumber), doc MkDocs, workflow Pages.
+
+### Revenir à un tag (lecture seule)
+
+```bash
+git fetch --all
+git checkout v0.1.0-setup-ok
