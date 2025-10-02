@@ -16,3 +16,11 @@ __pycache__/
 
 # Environnement / secrets
 .env
+
+# Packaging / build artifacts
+*.egg-info/
+build/
+dist/
+
+# MkDocs
+site/
