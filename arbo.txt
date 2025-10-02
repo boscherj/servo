@@ -1,0 +1,58 @@
+.
+├── README.md
+├── arbo.txt
+├── pyproject.toml
+├── requirements.txt
+├── src
+│   ├── mon_projet
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   │   ├── __init__.cpython-312.pyc
+│   │   │   ├── config.cpython-312.pyc
+│   │   │   ├── core.cpython-312.pyc
+│   │   │   └── lecture.cpython-312.pyc
+│   │   ├── assets
+│   │   │   ├── excel
+│   │   │   │   ├── Requête Backlog_Format Import dates EBP.xlsx
+│   │   │   │   └── Vu Articles.xlsx
+│   │   │   ├── json
+│   │   │   │   └── config_fournisseurs.json
+│   │   │   └── pdfs
+│   │   │       ├── 1_BANK OF LAMPS_ES2507108_ loading.pdf
+│   │   │       ├── 2_ESL_48931.pdf
+│   │   │       ├── 3_LINEAR_42939.pdf
+│   │   │       ├── 4_LINDEN_INV2251027.pdf
+│   │   │       ├── 5_HIPOLOESTE_packing list nº 1218.pdf
+│   │   │       ├── 6_PROF ELEC_PL#41806_SCHENJKER TLL1700993.pdf
+│   │   │       ├── 7_WOJMAR_BonDeLivraison_WZ_199_07_V_2025.pdf
+│   │   │       ├── 8_JS_E1-SZ-1102432.pdf
+│   │   │       ├── BLs_Fournisseurs ELEC.zip
+│   │   │       └── DELTA- 1 Livraison_Plusieurs BLs
+│   │   │           ├── Bon de livraison 20253810.pdf
+│   │   │           ├── Bon de livraison 20253811.pdf
+│   │   │           ├── Bon de livraison 20253812.pdf
+│   │   │           ├── Bon de livraison 20253813.pdf
+│   │   │           ├── Bon de livraison 20253814.pdf
+│   │   │           ├── Bon de livraison 20253815.pdf
+│   │   │           ├── Bon de livraison 20253816.pdf
+│   │   │           ├── Bon de livraison 20253817.pdf
+│   │   │           ├── Bon de livraison 20253818.pdf
+│   │   │           ├── Bon de livraison 20253819.pdf
+│   │   │           ├── Bon de livraison 20253820.pdf
+│   │   │           └── Bon de livraison 20253821.pdf
+│   │   ├── config.py
+│   │   ├── core.py
+│   │   ├── lecture.py
+│   │   └── textdupdf.py
+│   └── servo.egg-info
+│       ├── PKG-INFO
+│       ├── SOURCES.txt
+│       ├── dependency_links.txt
+│       └── top_level.txt
+└── tests
+    ├── __pycache__
+    │   ├── test_core.cpython-312-pytest-8.4.1.pyc
+    │   └── test_core.cpython-312-pytest-8.4.2.pyc
+    └── test_core.py
+
+12 directories, 44 files

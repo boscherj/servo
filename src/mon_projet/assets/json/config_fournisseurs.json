@@ -1,0 +1,50 @@
+{
+  "Electric Systems Ltd": {
+    "fournisseur_patterns": ["Electric Systems Ltd"],
+    "date_pattern": "Despatch Date",
+    "date_regex": "Despatch Date\\s*([0-9\\-]+)",
+    "tableau_entete": "Document No Customer Ref Internal Code Item Code Description Qty Despatched",
+    "ligne_regex": "^[0-9]+\\s+(\\S+)\\s+(\\S+)\\s+(\\S+)\\s+(\\S+)\\s+(.*?)\\s+(\\d+)$",
+    "fields": {
+      "purchase_order": 1,
+      "code_article": 4,
+      "description": 5,
+      "quantite": 6
+    },
+    "purchase_order_pattern": null,
+    "purchase_order_regex": null,
+    "description_fallback_lines": 0
+  },
+
+  "JS Electrical Solutions Kft.": {
+    "fournisseur_patterns": ["JS Electrical Solutions Kft."],
+    "date_pattern": "Issue date:",
+    "date_regex": "Issue date:\\s*([0-9\\.\\-]+)",
+    "tableau_entete": "Megnevezés / Denomination: Áfa / Nettó ár / NetMennyiség / Nettó érték / Áfa tartalom / Bruttó érték /",
+    "ligne_regex": "^(\\d+)\\.\\s*(.*?)\\s*á\\.m\\. /.*?(\\d+)\\s*db",
+    "fields": {
+      "description": 2,
+      "quantite": 3
+    },
+    "code_article_regex": "\\(([A-Za-z0-9\\-]+)\\)",
+    "purchase_order_pattern": null,
+    "purchase_order_regex": null,
+    "description_fallback_lines": 0
+  },
+
+  "Linden Electro s.r.o.": {
+    "fournisseur_patterns": ["Linden Electro s.r.o."],
+    "date_pattern": "Date:",
+    "date_regex": "Date:\\s*([0-9]{2}\\.[0-9]{2}\\.[0-9]{4})",
+    "tableau_entete": "Pos. Item Qty Net Price Total",
+    "ligne_regex": "^(\\d+)\\s+(\\S+)\\s+([0-9,.]+)\\s+[0-9,.]+\\s+[0-9,.]+$",
+    "fields": {
+      "pos": 1,
+      "code_article": 2,
+      "quantite": 3
+    },
+    "purchase_order_pattern": "Your order no.:",
+    "purchase_order_regex": "Your order no.:\\s*(CF0-[0-9]+)",
+    "description_fallback_lines": 3
+  }
+}

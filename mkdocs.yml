@@ -1,0 +1,21 @@
+site_name: servo
+theme:
+  name: material
+plugins:
+  - search
+  - autorefs
+  - mkdocstrings:
+      default_handler: python
+      handlers:
+        python:
+          paths: ["src"]              # <— ajoute src au sys.path pour la collecte
+          options:
+            docstring_style: google      # ou "numpy", "sphinx" si tu préfères
+            show_source: true
+            merge_init_into_class: true
+            separate_signature: true
+nav:
+  - Accueil: index.md
+  - Référence: reference.md
+watch:
+  - src

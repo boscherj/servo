@@ -18,3 +18,27 @@ minversion = "7.0"
 addopts = "-q --cov=src --cov-report=term-missing"
 testpaths = ["tests"]
 pythonpath = ["src"]
+
+[tool.coverage.run]
+source = ["src/mon_projet"]
+omit = [
+  "src/mon_projet/lecture.py",
+  "src/mon_projet/textdupdf.py",
+]
+
+[tool.coverage.report]
+show_missing = true
+skip_empty = true
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "servo"            # nom du projet (libre)
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = []         # mets-y tes deps runtime si besoin
+
+[tool.setuptools.packages.find]
+where = ["src"]           # important: layout src/
