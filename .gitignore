@@ -1,26 +1,23 @@
-# Python
+# --- Ignorer uniquement les PDF des assets ---
+src/mon_projet/assets/pdfs/**/*.pdf
+!src/mon_projet/assets/pdfs/.gitkeep
+
+# Résultats de tests
+tests/results_*.json
+
+# caches Python
 __pycache__/
 *.pyc
-*.pyo
-*.pyd
-.python-version
 
-# venv
+# macOS
+.DS_Store
+src/.DS_Store
+src/mon_projet/.DS_Store
+src/mon_projet/assets/.DS_Store
+
+# environnements / artefacts
 .venv/
-
-# VS Code
-.vscode/
-!.vscode/settings.json
-!.vscode/launch.json
-!.vscode/tasks.json
-
-# Environnement / secrets
 .env
-
-# Packaging / build artifacts
-*.egg-info/
-build/
-dist/
-
-# MkDocs
-site/
+src/servo.egg-info/
+sandbox/
+.coverage
