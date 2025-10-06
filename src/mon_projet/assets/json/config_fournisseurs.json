@@ -1,20 +1,36 @@
 {
-  "Electric Systems Ltd": {
-    "fournisseur_patterns": ["Electric Systems Ltd"],
-    "date_pattern": "Despatch Date",
-    "date_regex": "Despatch Date\\s*([0-9\\-]+)",
-    "tableau_entete": "Document No Customer Ref Internal Code Item Code Description Qty Despatched",
-    "ligne_regex": "^[0-9]+\\s+(\\S+)\\s+(\\S+)\\s+(\\S+)\\s+(\\S+)\\s+(.*?)\\s+(\\d+)$",
-    "fields": {
-      "purchase_order": 1,
-      "code_article": 4,
-      "description": 5,
-      "quantite": 6
-    },
-    "purchase_order_pattern": null,
-    "purchase_order_regex": null,
-    "description_fallback_lines": 0
+  "suppliers": {
+    "Electric Systems Ltd": {
+      "detect": {
+        "must_contain_any": [
+          "Electric Systems Ltd",
+          "DESPATCH NOTE"
+        ]
+      },
+      "block": {
+        "start_line_regex": "^Document No Customer Ref Internal Code Item Code Description Qty Despatched$",
+        "header_tokens": [
+          "Document", "No", "Customer", "Ref", "Internal", "Code", "Item", "Code", "Description", "Qty", "Despatched"
+        ],
+        "stop_markers": [
+          "^Page\\s+\\d+\\s+of\\s+\\d+$"
+        ],
+        "join_until_match": false,
+        "join_separator": " "
+      },
+
+      "item_regex": "^(?P<document_no>\\d{7,})\\s+(?P<customer_ref>CF0-\\d+)\\s+(?P<internal_code>\\d+)\\s+(?P<item_code>[A-Z0-9]+)\\s+(?P<description>.+?)\\s+(?P<qty_despatched>\\d+)$",
+      "line_regex": "^(?P<document_no>\\d{7,})\\s+(?P<customer_ref>CF0-\\d+)\\s+(?P<internal_code>\\d+)\\s+(?P<item_code>[A-Z0-9]+)\\s+(?P<description>.+?)\\s+(?P<qty_despatched>\\d+)$",
+
+      "post": {
+        "int_fields": ["qty_despatched"]
+      },
+      "meta": {
+        "date_regex": "Despatch Date\\s+(\\d{4}-\\d{2}-\\d{2})"
+      }
+    }
   },
+
 
   "JS Electrical Solutions Kft.": {
     "fournisseur_patterns": ["JS Electrical Solutions Kft."],
@@ -46,5 +62,30 @@
     "purchase_order_pattern": "Your order no.:",
     "purchase_order_regex": "Your order no.:\\s*(CF0-[0-9]+)",
     "description_fallback_lines": 3
-  }
+  },
+
+  "Linear Supply Solutions (Europe) BV": {
+  "fournisseur_patterns": [
+    "linear supply solutions",
+    "linearss.com"
+  ],
+  "date_pattern": "Date:",
+  "date_regex": "Date:\\s*([0-9]{2}\\/[0-9]{2}\\/[0-9]{4})",
+  "tableau_entete": "Pos Marque Code Description Commandée Livrée ce jour suivre",
+  "ligne_regex": "^(\\d+)\\s+(\\S+)\\s+(\\S+)\\s+(.*?)\\s+(\\d+)\\s+(\\d+)\\s+(\\d+)\\s+(\\d+)$",
+  "fields": {
+    "pos": 1,
+    "marque": 2,
+    "code_article": 3,
+    "description": 4,
+    "qte_commandee": 5,
+    "qte_livree": 6,
+    "qte_ce_jour": 7,
+    "qte_a_suivre": 8
+  },
+  "purchase_order_pattern": "Commande Client N°:",
+  "purchase_order_regex": "Commande Client N°:\\s*(CF0-[0-9]+)",
+  "description_fallback_lines": 1
+}
+
 }

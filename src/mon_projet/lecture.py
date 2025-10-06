@@ -6,8 +6,11 @@ from pathlib import Path
 import pandas as pd
 import pdfplumber
 
+# Le fichier config.py gère les chemins
 from mon_projet.config import FOURNISSEURS_CONFIG, PDF_PATH
 
+# Le fichier config_fournisseurs.json est le fichier qui contient les patterns et regex
+# par fournisseur
 if not Path(FOURNISSEURS_CONFIG).exists():
     sys.exit(f"Fichier config introuvable: {FOURNISSEURS_CONFIG}")
 if not Path(PDF_PATH).exists():

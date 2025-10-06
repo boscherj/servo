@@ -1,8 +1,27 @@
 .
 ├── README.md
 ├── arbo.txt
+├── docs
+│   ├── index.md
+│   └── reference.md
+├── mkdocs.yml
 ├── pyproject.toml
 ├── requirements.txt
+├── sandbox
+│   ├── items_allpages_from_headers.py
+│   ├── items_allpages_table0.csv
+│   ├── items_from_headers.py
+│   ├── items_from_headers_table0.csv
+│   ├── items_from_headers_v2.py
+│   ├── items_from_headers_v2_table0.csv
+│   ├── items_scan_stream.py
+│   ├── items_stream_auto_table0.csv
+│   ├── pass1_auto_table0.csv
+│   ├── testA_stream_output.csv
+│   ├── test_A_stream.py
+│   ├── test_items_auto_pick.py
+│   ├── test_items_lattice.py
+│   └── test_items_stream.py
 ├── src
 │   ├── mon_projet
 │   │   ├── __init__.py
@@ -10,7 +29,10 @@
 │   │   │   ├── __init__.cpython-312.pyc
 │   │   │   ├── config.cpython-312.pyc
 │   │   │   ├── core.cpython-312.pyc
-│   │   │   └── lecture.cpython-312.pyc
+│   │   │   ├── lecture.cpython-312.pyc
+│   │   │   ├── test_A_stream.cpython-312.pyc
+│   │   │   ├── test_items_lattice.cpython-312.pyc
+│   │   │   └── textdupdf.cpython-312.pyc
 │   │   ├── assets
 │   │   │   ├── excel
 │   │   │   │   ├── Requête Backlog_Format Import dates EBP.xlsx
@@ -48,6 +70,7 @@
 │       ├── PKG-INFO
 │       ├── SOURCES.txt
 │       ├── dependency_links.txt
+│       ├── requires.txt
 │       └── top_level.txt
 └── tests
     ├── __pycache__
@@ -55,4 +78,4 @@
     │   └── test_core.cpython-312-pytest-8.4.2.pyc
     └── test_core.py
 
-12 directories, 44 files
+14 directories, 65 files

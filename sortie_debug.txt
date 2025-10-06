@@ -1,0 +1,5 @@
+{
+  "file": "src/mon_projet/assets/pdfs/3_LINEAR_42939.pdf",
+  "supplier": "unknown",
+  "profile": {}
+}
