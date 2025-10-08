@@ -147,8 +147,6 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
-    result = detect_fournisseur(
-        pdf_path=Path(args.pdf), config_path=Path(args.config), pages_to_read=args.pages
-    )
+    result = detect_fournisseur(pdf_path=Path(args.pdf), config_path=Path(args.config), pages_to_read=args.pages)
 
     print(_json.dumps(result, ensure_ascii=False, indent=2))

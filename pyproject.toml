@@ -1,13 +1,16 @@
 [tool.black]
-line-length = 100
-target-version = ["py311","py312"]  # ajuste à ta version locale de Python
+line-length = 120
+target-version = ["py312"]  # ajuste à ta version locale de Python
 
 [tool.ruff]
 line-length = 120
-target-version = "py311"            # idem, ajuste si besoin (ex: "py312")
+target-version = "py312"            # idem, ajuste si besoin (ex: "py312")
 extend-exclude = ["venv", ".venv", "build", "dist"]
-select = ["E","F","I","UP"]     # erreurs, fautes, imports, bonnes pratiques, upgrades
 fix = true                          # autorise les corrections automatiques
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP"]
+
 
 [tool.ruff.format]
 quote-style = "double"

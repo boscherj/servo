@@ -78,9 +78,7 @@ for i, line in enumerate(all_lines):
         # --- Quantité (gère virgule, point, espace) ---
         quantite = None
         if "quantite" in fields:
-            qty_str = (
-                data[fields["quantite"] - 1].replace(".", "").replace(",", ".").replace(" ", "")
-            )
+            qty_str = data[fields["quantite"] - 1].replace(".", "").replace(",", ".").replace(" ", "")
             try:
                 quantite = float(qty_str)
             except ValueError:

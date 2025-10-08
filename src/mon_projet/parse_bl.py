@@ -109,9 +109,7 @@ def extract_items_from_tables(profile, tables, debug: bool = False):
                         item[field_name] = ""
 
                 # Complément éventuel : code article dans la description
-                if (
-                    "code_article" not in item or not item["code_article"]
-                ) and code_article_inside_desc_re:
+                if ("code_article" not in item or not item["code_article"]) and code_article_inside_desc_re:
                     if item.get("description"):
                         m2 = code_article_inside_desc_re.search(item["description"])
                         if m2:
@@ -137,9 +135,7 @@ def extract_items_from_tables(profile, tables, debug: bool = False):
                         item[field_name] = m.group(grp_index)
                     except IndexError:
                         item[field_name] = ""
-                if (
-                    "code_article" not in item or not item["code_article"]
-                ) and code_article_inside_desc_re:
+                if ("code_article" not in item or not item["code_article"]) and code_article_inside_desc_re:
                     if item.get("description"):
                         m2 = code_article_inside_desc_re.search(item["description"])
                         if m2:
@@ -156,9 +152,7 @@ def extract_items_from_tables(profile, tables, debug: bool = False):
 # defined above.)
 
 
-def extract_metadata_from_text(
-    profile: dict[str, Any], pdf_path: Path, pages_opt
-) -> dict[str, Any]:
+def extract_metadata_from_text(profile: dict[str, Any], pdf_path: Path, pages_opt) -> dict[str, Any]:
     """
     Lit (un extrait de) texte du PDF et applique les regex du profil pour récupérer :
     - date_document (ex: '23/07/2025')
@@ -347,9 +341,7 @@ def _header_tokens_in_text(header: str, text: str) -> bool:
     return all(tok in txt for tok in head.split())
 
 
-def choose_best_flavor(
-    pdf_path: Path, profile: dict[str, Any], pages: str = "all"
-) -> dict[str, Any]:
+def choose_best_flavor(pdf_path: Path, profile: dict[str, Any], pages: str = "all") -> dict[str, Any]:
     """
     Si le profil contient 'fixed_flavor' (ou 'flavor'), on lit UNIQUEMENT avec ce flavor
     et on le choisit, même si l'entête n'apparaît pas dans les tables (cas ESL).
@@ -445,9 +437,7 @@ def choose_best_flavor(
 # CLI principale (Étape A)
 # ------------------------------
 def main():
-    parser = argparse.ArgumentParser(
-        description="Étape 2A: choisir le flavor Camelot (sans parsing de lignes)."
-    )
+    parser = argparse.ArgumentParser(description="Étape 2A: choisir le flavor Camelot (sans parsing de lignes).")
     parser.add_argument("--pdf", required=True, type=Path, help="Chemin du fichier PDF à analyser")
     parser.add_argument(
         "--config",
@@ -455,12 +445,8 @@ def main():
         type=Path,
         help="Chemin du JSON de configuration fournisseurs",
     )
-    parser.add_argument(
-        "--pages", default="all", help="Pages Camelot à analyser (ex: '1', '1-2', 'all')"
-    )
-    parser.add_argument(
-        "--debug", action="store_true", help="Affiche un extrait du texte du PDF pour debug"
-    )
+    parser.add_argument("--pages", default="all", help="Pages Camelot à analyser (ex: '1', '1-2', 'all')")
+    parser.add_argument("--debug", action="store_true", help="Affiche un extrait du texte du PDF pour debug")
     args = parser.parse_args()
 
     # 1) Détecter le fournisseur et récupérer le profil
@@ -542,8 +528,7 @@ def main():
             if args.debug:
                 # Petit log utile pour vérifier ce que Camelot a réellement capturé
                 print(
-                    "[DEBUG] matched_tables vide → fallback sur "
-                    f"{len(selected_tables)} table(s) pour l'extraction.",
+                    "[DEBUG] matched_tables vide → fallback sur " f"{len(selected_tables)} table(s) pour l'extraction.",
                     file=sys.stderr,
                 )
 

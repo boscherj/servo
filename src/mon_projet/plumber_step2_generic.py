@@ -242,9 +242,7 @@ def _get_nested_value(data: dict, path: str) -> Any:
     return value
 
 
-def _display_item(
-    index: int, item: dict, field_mapping: dict, standard_labels: dict, header: dict = None
-):
+def _display_item(index: int, item: dict, field_mapping: dict, standard_labels: dict, header: dict = None):
     """Affiche un item avec les champs standards."""
     print(f"\nItem {index}:")
 
@@ -281,9 +279,7 @@ def display_extraction_summary(supplier: str, items: list, orders: list, config:
     if orders:
         for order in orders:
             header = order.get("header", {})
-            order_num = _get_nested_value(
-                header, field_mapping.get("order_number", "").replace("header.", "")
-            )
+            order_num = _get_nested_value(header, field_mapping.get("order_number", "").replace("header.", ""))
             print(f"\n--- Commande {order_num or 'N/A'} ---")
 
             for i, item in enumerate(order.get("items", []), 1):
@@ -356,9 +352,7 @@ def main():
 
     if DEBUG_1:
         print(f"[DBG] start_re={repr(start_re)}")
-        print(
-            f"[DBG] multi_blocks={multi}, header_regex={repr(header_re)}, item_regex set? {bool(line_re)}"
-        )
+        print(f"[DBG] multi_blocks={multi}, header_regex={repr(header_re)}, item_regex set? {bool(line_re)}")
 
     # 4) Isoler le bloc items UNIQUEMENT si on n'est PAS en multi-blocs
     block_lines = []
