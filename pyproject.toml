@@ -36,7 +36,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "servo"            # nom du projet (libre)
-version = "0.1.0"
+version = "0.5.0"
 requires-python = ">=3.12"
 dependencies = ["pandas", "numpy", "pdfplumber", "pytest"]         # mets-y tes deps runtime si besoin
 
