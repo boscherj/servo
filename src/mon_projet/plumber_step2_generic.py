@@ -22,14 +22,14 @@ import pdfplumber
 
 # Chemins/paramètres (modifie ici si besoin)
 # PDF_PATH = Path("src/mon_projet/assets/pdfs/2_ESL_48931.pdf")
-# PDF_PATH = Path("src/mon_projet/assets/pdfs/3_LINEAR_42939.pdf")
-PDF_PATH = Path("src/mon_projet/assets/pdfs/4_LINDEN_INV2251027.pdf")
+PDF_PATH = Path("src/mon_projet/assets/pdfs/3_LINEAR_42939.pdf")
+# PDF_PATH = Path("src/mon_projet/assets/pdfs/4_LINDEN_INV2251027.pdf")
 
 PAGES = "all"
 
 CONFIG_PATH = Path("src/mon_projet/assets/json/config_fournisseurs.json")
-DEBUG = True
-DEBUG_1 = True
+DEBUG = False
+DEBUG_1 = False
 
 
 def _extract_multi_blocks(lines: list[str], header_re: str, item_re: str) -> list[dict]:
@@ -227,6 +227,89 @@ def _extract_multi_blocks(lines: list[str], header_regex: str, item_regex: str) 
     return blocks
 
 
+def _get_nested_value(data: dict, path: str) -> Any:
+    """Récupère une valeur dans un dict avec notation pointée (ex: 'header.commande_client')."""
+    if not path:
+        return None
+
+    keys = path.split(".")
+    value = data
+    for key in keys:
+        if isinstance(value, dict):
+            value = value.get(key)
+        else:
+            return None
+    return value
+
+
+def _display_item(
+    index: int, item: dict, field_mapping: dict, standard_labels: dict, header: dict = None
+):
+    """Affiche un item avec les champs standards."""
+    print(f"\nItem {index}:")
+
+    for standard_field, source_field in field_mapping.items():
+        # Gérer les champs du header (pour Linear)
+        if source_field.startswith("header.") and header:
+            value = _get_nested_value(header, source_field.replace("header.", ""))
+        else:
+            value = _get_nested_value(item, source_field)
+
+        # Indicateur visuel si manquant
+        display_value = value if value is not None else "❌ MANQUANT"
+
+        # Nom lisible du champ
+        field_label = standard_labels.get(standard_field, standard_field)
+
+        print(f"  {field_label:25s}: {display_value}")
+
+
+def display_extraction_summary(supplier: str, items: list, orders: list, config: dict):
+    """Affiche un résumé générique de l'extraction."""
+
+    profile = config["suppliers"].get(supplier, {})
+    field_mapping = profile.get("field_mapping", {})
+    standard_labels = config.get("standard_fields", {})
+
+    print("\n" + "=" * 80)
+    print(f"RÉSUMÉ DE L'EXTRACTION - {supplier}")
+    print("=" * 80)
+    print("\nChamps essentiels extraits:")
+    print("-" * 60)
+
+    # Gérer le cas multi-blocs (Linear)
+    if orders:
+        for order in orders:
+            header = order.get("header", {})
+            order_num = _get_nested_value(
+                header, field_mapping.get("order_number", "").replace("header.", "")
+            )
+            print(f"\n--- Commande {order_num or 'N/A'} ---")
+
+            for i, item in enumerate(order.get("items", []), 1):
+                _display_item(i, item, field_mapping, standard_labels, header)
+                if i >= 5:
+                    remaining = len(order.get("items", [])) - 5
+                    if remaining > 0:
+                        print(f"\n  ... et {remaining} autres items")
+                    break
+
+    # Cas simple (ESL, Linden)
+    else:
+        for i, item in enumerate(items, 1):
+            _display_item(i, item, field_mapping, standard_labels)
+            if i >= 5:
+                remaining = len(items) - 5
+                if remaining > 0:
+                    print(f"\n  ... et {remaining} autres items")
+                break
+
+    total = len(items) if not orders else sum(len(o.get("items", [])) for o in orders)
+    print("\n" + "=" * 80)
+    print(f"TOTAL : {total} items extraits")
+    print("=" * 80 + "\n")
+
+
 def main():
     # 1) Lire PDF
     read = _read_pdf_lines(PDF_PATH, PAGES)
@@ -288,19 +371,21 @@ def main():
 
     # 5) Parser les items
     items: list[dict[str, Any]] = []
+    orders: list[dict[str, Any]] = []
 
     if multi and header_re and line_re:
         # MODE MULTI-BLOCS
         blocks = _extract_multi_blocks(read["lines"], header_re, line_re)
-        out["orders"] = []
+        orders = []
         for b in blocks:
             # post-traitement int
             for it in b["items"]:
                 for k in (profile.get("post") or {}).get("int_fields", []):
                     if k in it:
                         it[k] = _to_int_safe(it[k])
-            out["orders"].append({"header": b["header"], "items": b["items"]})
+            orders.append({"header": b["header"], "items": b["items"]})
             items.extend(b["items"])
+        out["orders"] = orders
 
     else:
         # MODE BLOC UNIQUE
@@ -318,6 +403,9 @@ def main():
 
     out["line_count"] = len(items)
     out["items"] = items
+
+    # NOUVEAU : Affichage du résumé avant le JSON
+    display_extraction_summary(supplier, items, orders, cfg)
 
     print(json.dumps(out, ensure_ascii=False, indent=2))
 

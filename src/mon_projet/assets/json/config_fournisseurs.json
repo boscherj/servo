@@ -1,4 +1,10 @@
 {
+  "standard_fields": {
+    "order_number": "Numéro de commande client",
+    "item_code": "Code article",
+    "quantity_delivered": "Quantité livrée",
+    "description": "Description"
+  },
   "suppliers": {
     "Electric Systems Ltd": {
       "detect": {
@@ -37,6 +43,12 @@
       },
       "meta": {
         "date_regex": "Despatch Date\\s+(\\d{4}-\\d{2}-\\d{2})"
+      },
+      "field_mapping": {
+        "order_number": "customer_ref",
+        "item_code": "item_code",
+        "quantity_delivered": "qty_despatched",
+        "description": "description"
       }
     },
     "Linear Supply Solutions (Europe) BV": {
@@ -58,6 +70,12 @@
           "qte_livree_ce_jour",
           "qte_a_suivre"
         ]
+      },
+      "field_mapping": {
+        "order_number": "header.commande_client",
+        "item_code": "code",
+        "quantity_delivered": "qte_livree_ce_jour",
+        "description": "description"
       }
     },
     "Linden Electro": {
@@ -83,9 +101,11 @@
           "total"
         ]
       },
-      "meta": {
-        "invoice_regex": "INVOICE\\s+(INV\\d+)",
-        "date_regex": "Date:\\s+(\\d{2}\\.\\d{2}\\.\\d{4})"
+      "field_mapping": {
+        "order_number": "your_order",
+        "item_code": "item_code",
+        "quantity_delivered": "qty",
+        "description": "description"
       }
     }
   }
