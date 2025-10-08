@@ -10,7 +10,17 @@
       "block": {
         "start_line_regex": "^Document No Customer Ref Internal Code Item Code Description Qty Despatched$",
         "header_tokens": [
-          "Document", "No", "Customer", "Ref", "Internal", "Code", "Item", "Code", "Description", "Qty", "Despatched"
+          "Document",
+          "No",
+          "Customer",
+          "Ref",
+          "Internal",
+          "Code",
+          "Item",
+          "Code",
+          "Description",
+          "Qty",
+          "Despatched"
         ],
         "stop_markers": [
           "^Page\\s+\\d+\\s+of\\s+\\d+$"
@@ -18,74 +28,65 @@
         "join_until_match": false,
         "join_separator": " "
       },
-
       "item_regex": "^(?P<document_no>\\d{7,})\\s+(?P<customer_ref>CF0-\\d+)\\s+(?P<internal_code>\\d+)\\s+(?P<item_code>[A-Z0-9]+)\\s+(?P<description>.+?)\\s+(?P<qty_despatched>\\d+)$",
       "line_regex": "^(?P<document_no>\\d{7,})\\s+(?P<customer_ref>CF0-\\d+)\\s+(?P<internal_code>\\d+)\\s+(?P<item_code>[A-Z0-9]+)\\s+(?P<description>.+?)\\s+(?P<qty_despatched>\\d+)$",
-
       "post": {
-        "int_fields": ["qty_despatched"]
+        "int_fields": [
+          "qty_despatched"
+        ]
       },
       "meta": {
         "date_regex": "Despatch Date\\s+(\\d{4}-\\d{2}-\\d{2})"
       }
+    },
+    "Linear Supply Solutions (Europe) BV": {
+      "detect": {
+        "must_contain_any": [
+          "Linear Supply Solutions (Europe) BV",
+          "Bon de livraison",
+          "Commande Client N°:"
+        ]
+      },
+      "multi_blocks": true,
+      "header_regex": "Commande\\s+Client\\s+N°:\\s*(?P<commande_client>CF0-\\d+)\\s+Commande\\s+Linear\\s+N°:\\s*(?P<commande_linear>CO\\d+)\\s+Date\\s+commande:\\s*(?P<date_commande>\\d{2}/\\d{2}/\\d{4})",
+      "item_regex": "^(?P<pos>\\d+)\\s+(?P<marque>\\S+)\\s+(?P<code>\\S+)\\s+(?P<description>.+?)\\s+(?P<qte_commandee>\\d+)\\s+(?P<precedemment_livree>\\d+)\\s+(?P<qte_livree_ce_jour>\\d+)\\s+(?P<qte_a_suivre>\\d+)$",
+      "post": {
+        "int_fields": [
+          "pos",
+          "qte_commandee",
+          "precedemment_livree",
+          "qte_livree_ce_jour",
+          "qte_a_suivre"
+        ]
+      }
+    },
+    "Linden Electro": {
+      "detect": {
+        "must_contain_any": [
+          "Linden Electro s.r.o.",
+          "INVOICE INV",
+          "Barrandova 409/1"
+        ]
+      },
+      "block": {
+        "start_line_regex": "^Pos\\.?\\s+Item\\s+Qty\\s+Net\\s+Price\\s+Total",
+        "stop_line_regex": null
+      },
+      "item_regex": "^(?P<pos>\\d+)\\s+(?P<item_code>[A-Z0-9\\-]+)\\s+(?P<qty>[\\d,\\.]+)\\s+(?P<net_price>[\\d,\\.]+)\\s+(?P<total>[\\d,\\.]+)",
+      "post": {
+        "int_fields": [
+          "pos"
+        ],
+        "float_fields": [
+          "qty",
+          "net_price",
+          "total"
+        ]
+      },
+      "meta": {
+        "invoice_regex": "INVOICE\\s+(INV\\d+)",
+        "date_regex": "Date:\\s+(\\d{2}\\.\\d{2}\\.\\d{4})"
+      }
     }
-  },
-
-
-  "JS Electrical Solutions Kft.": {
-    "fournisseur_patterns": ["JS Electrical Solutions Kft."],
-    "date_pattern": "Issue date:",
-    "date_regex": "Issue date:\\s*([0-9\\.\\-]+)",
-    "tableau_entete": "Megnevezés / Denomination: Áfa / Nettó ár / NetMennyiség / Nettó érték / Áfa tartalom / Bruttó érték /",
-    "ligne_regex": "^(\\d+)\\.\\s*(.*?)\\s*á\\.m\\. /.*?(\\d+)\\s*db",
-    "fields": {
-      "description": 2,
-      "quantite": 3
-    },
-    "code_article_regex": "\\(([A-Za-z0-9\\-]+)\\)",
-    "purchase_order_pattern": null,
-    "purchase_order_regex": null,
-    "description_fallback_lines": 0
-  },
-
-  "Linden Electro s.r.o.": {
-    "fournisseur_patterns": ["Linden Electro s.r.o."],
-    "date_pattern": "Date:",
-    "date_regex": "Date:\\s*([0-9]{2}\\.[0-9]{2}\\.[0-9]{4})",
-    "tableau_entete": "Pos. Item Qty Net Price Total",
-    "ligne_regex": "^(\\d+)\\s+(\\S+)\\s+([0-9,.]+)\\s+[0-9,.]+\\s+[0-9,.]+$",
-    "fields": {
-      "pos": 1,
-      "code_article": 2,
-      "quantite": 3
-    },
-    "purchase_order_pattern": "Your order no.:",
-    "purchase_order_regex": "Your order no.:\\s*(CF0-[0-9]+)",
-    "description_fallback_lines": 3
-  },
-
-  "Linear Supply Solutions (Europe) BV": {
-  "fournisseur_patterns": [
-    "linear supply solutions",
-    "linearss.com"
-  ],
-  "date_pattern": "Date:",
-  "date_regex": "Date:\\s*([0-9]{2}\\/[0-9]{2}\\/[0-9]{4})",
-  "tableau_entete": "Pos Marque Code Description Commandée Livrée ce jour suivre",
-  "ligne_regex": "^(\\d+)\\s+(\\S+)\\s+(\\S+)\\s+(.*?)\\s+(\\d+)\\s+(\\d+)\\s+(\\d+)\\s+(\\d+)$",
-  "fields": {
-    "pos": 1,
-    "marque": 2,
-    "code_article": 3,
-    "description": 4,
-    "qte_commandee": 5,
-    "qte_livree": 6,
-    "qte_ce_jour": 7,
-    "qte_a_suivre": 8
-  },
-  "purchase_order_pattern": "Commande Client N°:",
-  "purchase_order_regex": "Commande Client N°:\\s*(CF0-[0-9]+)",
-  "description_fallback_lines": 1
-}
-
+  }
 }

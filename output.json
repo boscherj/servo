@@ -1,0 +1,126 @@
+---- TEXTE PDF (début) ----
+Linden Electro s.r.o.
+Barrandova 409/1
+143 00Prague
+Contact person: Jakub Novák
+E-mail: novak@lindenelectro.com
+Phone: +420 608 819 600
+SERVO SAS Customer ID.: 416461
+3 Rue du Tregor Customer TAX ID: FR78750067654
+35140 SAINT-AUBIN-DU-CORMIER
+FRANCE
+Date: 14.07.2025
+Tax fulfillment date: 14.07.2025
+Due date: 28.07.2025
+INVOICE INV2251027
+Bank Name: Raiffeisenbank, a.s.
+IBAN: CZ0355000000002260102002
+Swift/BIC: RZBCCZPP
+Bank Address: Hvězdova 1716/2b, 140 78, Prague
+Pos. Item Qty Net Price Total
+in EUR in EUR
+1 2273-208 300,00 0,23 69,36
+Konektor s pájecími piny THR
+Manufacturer: WAGO
+Customs Tariff No.: 85369010
+Your order no.: CF0-200206999
+Linden order: OC252377
+2 221-412 14.100,00 0,19 2.621,19
+1vodičová pružinová svorkovnice
+Manufacturer: WAGO
+Customs Tariff No.: 85369010
+Your order no.: CF0-200207104
+Linden order: OC252433
+3 A9S70663 1,00 15,04 15,04
+Manufacturer: Schneider Electric
+Customs Tariff No.: 85365080
+Your order no.: CF0-200205470
+Linden order: OC250999
+4 A9V44263 1,00 34,54 34,54
+Manufacturer: Schneider Electric
+Customs Tariff No.: 85363030
+Your order no.: CF0-200205873
+Linden order: OC251361
+5 A9A26946 15,00 17,48 262,21
+Manufacturer: Schneider Electric
+Customs Tar
+---- FIN EXTRAIT ----
+[DBG] PDF_PATH = /Users/jackieboscher/Dev/servo/src/mon_projet/assets/pdfs/4_LINDEN_INV2251027.pdf
+[DBG] CONFIG_PATH = /Users/jackieboscher/Dev/servo/src/mon_projet/assets/json/config_fournisseurs.json
+[DBG] pages_parsed = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23], page_count = 24
+[DBG] first 200 chars of joined text = Linden Electro s.r.o. Barrandova 409/1 143 00Prague Contact person: Jakub Novák E-mail: novak@lindenelectro.com Phone: +420 608 819 600 SERVO SAS Customer ID.: 416461 3 Rue du Tregor Customer TAX ID:
+[DBG] suppliers in config = ['Electric Systems Ltd', 'Linear Supply Solutions (Europe) BV', 'Linden Electro']
+[DBG] joined has 'Linear Supply Solutions (Europe) BV'? False
+[DBG] supplier chosen = Linden Electro
+[DBG] start_re='^Pos\\.?\\s+Item\\s+Qty\\s+Net\\s+Price\\s+Total'
+[DBG] multi_blocks=False, header_regex=None, item_regex set? True
+{
+  "file": "src/mon_projet/assets/pdfs/4_LINDEN_INV2251027.pdf",
+  "supplier": "Linden Electro",
+  "profile_loaded": true,
+  "page_count": 24,
+  "pages_parsed": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "line_count": 5,
+  "items": [
+    {
+      "pos": 1,
+      "item_code": "2273-208",
+      "qty": "300,00",
+      "net_price": "0,23",
+      "total": "69,36"
+    },
+    {
+      "pos": 2,
+      "item_code": "221-412",
+      "qty": "14.100,00",
+      "net_price": "0,19",
+      "total": "2.621,19"
+    },
+    {
+      "pos": 3,
+      "item_code": "A9S70663",
+      "qty": "1,00",
+      "net_price": "15,04",
+      "total": "15,04"
+    },
+    {
+      "pos": 4,
+      "item_code": "A9V44263",
+      "qty": "1,00",
+      "net_price": "34,54",
+      "total": "34,54"
+    },
+    {
+      "pos": 5,
+      "item_code": "A9A26946",
+      "qty": "15,00",
+      "net_price": "17,48",
+      "total": "262,21"
+    }
+  ]
+}
