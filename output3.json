@@ -29,129 +29,56 @@ Linden order: OC252377
 1vodičová pružinová svorkovnice
 Manufacturer: WAGO
 Customs Tariff No.: 85369010
-Your order no.: CF0-200207104
-Linden order: OC252433
-3 A9S70663 1,00 15,04 15,04
-Manufacturer: Schneider Electric
-Customs Tariff No.: 85365080
-Your order no.: CF0-200205470
-Linden order: OC250999
-4 A9V44263 1,00 34,54 34,54
-Manufacturer: Schneider Electric
-Customs Tariff No.: 85363030
-Your order no.: CF0-200205873
-Linden order: OC251361
-5 A9A26946 15,00 17,48 262,21
-Manufacturer: Schneider Electric
-Customs Tar
 ---- FIN EXTRAIT ----
 [DBG] PDF_PATH = /Users/jackieboscher/Dev/servo/src/mon_projet/assets/pdfs/4_LINDEN_INV2251027.pdf
 [DBG] CONFIG_PATH = /Users/jackieboscher/Dev/servo/src/mon_projet/assets/json/config_fournisseurs.json
-[DBG] pages_parsed = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23], page_count = 24
-[DBG] first 200 chars of joined text = Linden Electro s.r.o. Barrandova 409/1 143 00Prague Contact person: Jakub Novák E-mail: novak@lindenelectro.com Phone: +420 608 819 600 SERVO SAS Customer ID.: 416461 3 Rue du Tregor Customer TAX ID:
-[DBG] suppliers in config = ['Electric Systems Ltd', 'Linear Supply Solutions (Europe) BV', 'Linden Electro']
-[DBG] joined has 'Linear Supply Solutions (Europe) BV'? False
+[DBG] suppliers in config = ['Electric Systems Ltd', 'Linear Supply Solutions (Europe) BV', 'Linden Electro', 'Prof-Elec']
 [DBG] supplier chosen = Linden Electro
-[DBG] profile keys = ['detect', 'block', 'item_mode', 'header_regex', 'multiline_item', 'post', 'field_mapping']
-[DBG] has multiline_item? True
-[DBG] multiline_item keys = ['start_regex', 'qty_regex', 'desc_regex', 'max_follow_lines', 'code_group', 'qty_group', 'desc_group']
-[DBG] start_re='^Pos\\.?\\s+Item\\s+Qty\\s+Net\\s+Price\\s+Total$'
-[DBG] multi_blocks=False, header_regex='Your\\s+order\\s+no\\.\\s*:?\\s*(?P<your_order_no>CF0-\\d+)', item_regex set? False
-[DBG] header_regex hits: 158 -> [24, 30, 35, 40, 45, 58, 63, 68, 73, 78]
-[DBG] header line @ 24: Your order no.: CF0-200206999
-[DBG] header line @ 30: Your order no.: CF0-200207104
-[DBG] header line @ 35: Your order no.: CF0-200205470
-[DBG] item_regex is None (ok si fournisseur multi-ligne comme Linden)
-[DBG] multiline.start_regex hits: 158 -> [20, 26, 32, 37, 42, 55, 60, 65, 70, 75]
-[DBG] multiline.start_regex line @ 20: 1 2273-208 300,00 0,23 69,36
-[DBG] multiline.start_regex line @ 26: 2 221-412 14.100,00 0,19 2.621,19
-[DBG] multiline.start_regex line @ 32: 3 A9S70663 1,00 15,04 15,04
-[DBG] multiline.qty_regex hits: 607 -> [1, 2, 5, 6, 7, 8, 10, 11, 12, 17]
-[DBG] multiline.qty_regex line @ 1: Barrandova 409/1
-[DBG] multiline.qty_regex line @ 2: 143 00Prague
-[DBG] multiline.qty_regex line @ 5: Phone: +420 608 819 600
-[DBG] multiline.desc_regex hits: 414 -> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-[DBG] multiline.desc_regex line @ 0: Linden Electro s.r.o.
-[DBG] multiline.desc_regex line @ 1: Barrandova 409/1
-[DBG] multiline.desc_regex line @ 2: 143 00Prague
-[DBG] Entering multiline parsing mode (Linden)
-[DBG] Multiline parsing found 158 items
+[DBG] Mode: Linden/Prof-Elec (multiline)
+[DBG] 🔵 _parse_multiline_items START: 1027 lines
+[DBG] Found 158 items, 158 headers
+[DBG] 🟢 _parse_multiline_items END: 158 items
 
 ================================================================================
-RÉSUMÉ DE L'EXTRACTION - Linden Electro
+RÉSUMÉ - Linden Electro
 ================================================================================
-
-Champs essentiels extraits:
-------------------------------------------------------------
 
 Item 1:
   Numéro de commande client: CF0-200206999
-  Code article             : 2273-208
-  Quantité livrée          : 300.0
-  Description              : Konektor s pájecími piny THR
+  Code article        : 2273-208
+  Quantité livrée     : 300.0
+  Description         : Konektor s pájecími piny THR
 
 Item 2:
-  Numéro de commande client: CF0-200206999
-  Code article             : 221-412
-  Quantité livrée          : 14100.0
-  Description              : 1vodičová pružinová svorkovnice
+  Numéro de commande client: CF0-200207104
+  Code article        : 221-412
+  Quantité livrée     : 14100.0
+  Description         : 1vodičová pružinová svorkovnice
 
 Item 3:
-  Numéro de commande client: CF0-200207104
-  Code article             : A9S70663
-  Quantité livrée          : 1.0
-  Description              : ❌ MANQUANT
+  Numéro de commande client: CF0-200205470
+  Code article        : A9S70663
+  Quantité livrée     : 1.0
+  Description         : ❌
 
 Item 4:
-  Numéro de commande client: CF0-200205470
-  Code article             : A9V44263
-  Quantité livrée          : 1.0
-  Description              : ❌ MANQUANT
+  Numéro de commande client: CF0-200205873
+  Code article        : A9V44263
+  Quantité livrée     : 1.0
+  Description         : ❌
 
 Item 5:
-  Numéro de commande client: CF0-200205873
-  Code article             : A9A26946
-  Quantité livrée          : 15.0
-  Description              : ❌ MANQUANT
+  Numéro de commande client: CF0-200205950
+  Code article        : A9A26946
+  Quantité livrée     : 15.0
+  Description         : ❌
 
-  ... et 153 autres items
+... et 153 autres items
 
-================================================================================
-TOTAL : 158 items extraits
-================================================================================
+TOTAL: 158 items
 
 {
-  "file": "src/mon_projet/assets/pdfs/4_LINDEN_INV2251027.pdf",
   "supplier": "Linden Electro",
-  "profile_loaded": true,
-  "page_count": 24,
-  "pages_parsed": [
-    0,
-    1,
-    2,
-    3,
-    4,
-    5,
-    6,
-    7,
-    8,
-    9,
-    10,
-    11,
-    12,
-    13,
-    14,
-    15,
-    16,
-    17,
-    18,
-    19,
-    20,
-    21,
-    22,
-    23
-  ],
-  "line_count": 158,
   "items": [
     {
       "item_code": "2273-208",
@@ -163,55 +90,55 @@ TOTAL : 158 items extraits
       "item_code": "221-412",
       "qty": 14100.0,
       "description": "1vodičová pružinová svorkovnice",
-      "your_order": "CF0-200206999"
+      "your_order": "CF0-200207104"
     },
     {
       "item_code": "A9S70663",
       "qty": 1.0,
       "description": null,
-      "your_order": "CF0-200207104"
+      "your_order": "CF0-200205470"
     },
     {
       "item_code": "A9V44263",
       "qty": 1.0,
       "description": null,
-      "your_order": "CF0-200205470"
+      "your_order": "CF0-200205873"
     },
     {
       "item_code": "A9A26946",
       "qty": 15.0,
       "description": null,
-      "your_order": "CF0-200205873"
-    },
-    {
-      "item_code": "A9A26946",
-      "qty": 8.0,
-      "description": null,
       "your_order": "CF0-200205950"
     },
     {
       "item_code": "A9A26946",
-      "qty": 16.0,
+      "qty": 8.0,
       "description": null,
       "your_order": "CF0-200205983"
     },
     {
       "item_code": "A9A26946",
-      "qty": 8.0,
+      "qty": 16.0,
       "description": null,
       "your_order": "CF0-200206062"
+    },
+    {
+      "item_code": "A9A26946",
+      "qty": 8.0,
+      "description": null,
+      "your_order": "CF0-200206071"
     },
     {
       "item_code": "A9R10225",
       "qty": 1.0,
       "description": null,
-      "your_order": "CF0-200206071"
+      "your_order": "CF0-200206113"
     },
     {
       "item_code": "LC1D80ABBE",
       "qty": 4.0,
       "description": null,
-      "your_order": "CF0-200206113"
+      "your_order": "CF0-200206173"
     },
     {
       "item_code": "XB7EV07BP",
@@ -223,13 +150,13 @@ TOTAL : 158 items extraits
       "item_code": "XB7EV07BP",
       "qty": 2.0,
       "description": null,
-      "your_order": "CF0-200206173"
+      "your_order": "CF0-200206277"
     },
     {
       "item_code": "A9DE3716",
       "qty": 1.0,
       "description": null,
-      "your_order": "CF0-200206277"
+      "your_order": "CF0-200206326"
     },
     {
       "item_code": "A9DE3732",
@@ -295,7 +222,7 @@ TOTAL : 158 items extraits
       "item_code": "A9E18073",
       "qty": 1.0,
       "description": null,
-      "your_order": "CF0-200206326"
+      "your_order": "CF0-200206394"
     },
     {
       "item_code": "A9F74210",
@@ -355,7 +282,7 @@ TOTAL : 158 items extraits
       "item_code": "A9DE3716",
       "qty": 1.0,
       "description": null,
-      "your_order": "CF0-200206394"
+      "your_order": "CF0-200206421"
     },
     {
       "item_code": "A9F74210",
@@ -403,7 +330,7 @@ TOTAL : 158 items extraits
       "item_code": "A9DE3716",
       "qty": 2.0,
       "description": null,
-      "your_order": "CF0-200206421"
+      "your_order": "CF0-200206343"
     },
     {
       "item_code": "A9F74310",
@@ -457,7 +384,7 @@ TOTAL : 158 items extraits
       "item_code": "A9DE3716",
       "qty": 9.0,
       "description": null,
-      "your_order": "CF0-200206343"
+      "your_order": "CF0-200206453"
     },
     {
       "item_code": "A9DE3732",
@@ -547,7 +474,7 @@ TOTAL : 158 items extraits
       "item_code": "A9C30812",
       "qty": 12.0,
       "description": null,
-      "your_order": "CF0-200206453"
+      "your_order": "CF0-200206510"
     },
     {
       "item_code": "A9DE3716",
@@ -619,7 +546,7 @@ TOTAL : 158 items extraits
       "item_code": "A9DE3720",
       "qty": 1.0,
       "description": "ACTI 9 iCV40N 3PN C 20A 30mA",
-      "your_order": "CF0-200206510"
+      "your_order": "CF0-200206529"
     },
     {
       "item_code": "A9F74216",
@@ -649,7 +576,7 @@ TOTAL : 158 items extraits
       "item_code": "A9C30812",
       "qty": 8.0,
       "description": null,
-      "your_order": "CF0-200206529"
+      "your_order": "CF0-200206554"
     },
     {
       "item_code": "A9DE3720",
@@ -715,7 +642,7 @@ TOTAL : 158 items extraits
       "item_code": "A9C30812",
       "qty": 4.0,
       "description": null,
-      "your_order": "CF0-200206554"
+      "your_order": "CF0-200206590"
     },
     {
       "item_code": "A9DE3720",
@@ -757,7 +684,7 @@ TOTAL : 158 items extraits
       "item_code": "A9C30812",
       "qty": 2.0,
       "description": null,
-      "your_order": "CF0-200206590"
+      "your_order": "CF0-200206618"
     },
     {
       "item_code": "A9F74216",
@@ -799,7 +726,7 @@ TOTAL : 158 items extraits
       "item_code": "A9E18073",
       "qty": 1.0,
       "description": null,
-      "your_order": "CF0-200206618"
+      "your_order": "CF0-200206636"
     },
     {
       "item_code": "A9F74210",
@@ -835,7 +762,7 @@ TOTAL : 158 items extraits
       "item_code": "A9C30812",
       "qty": 2.0,
       "description": null,
-      "your_order": "CF0-200206636"
+      "your_order": "CF0-200206659"
     },
     {
       "item_code": "A9DE3716",
@@ -901,7 +828,7 @@ TOTAL : 158 items extraits
       "item_code": "A9DE3720",
       "qty": 3.0,
       "description": "ACTI 9 iCV40N 3PN C 20A 30mA",
-      "your_order": "CF0-200206659"
+      "your_order": "CF0-200206688"
     },
     {
       "item_code": "A9DE3732",
@@ -967,7 +894,7 @@ TOTAL : 158 items extraits
       "item_code": "A9DE3716",
       "qty": 1.0,
       "description": null,
-      "your_order": "CF0-200206688"
+      "your_order": "CF0-200206717"
     },
     {
       "item_code": "A9F74210",
@@ -1039,7 +966,7 @@ TOTAL : 158 items extraits
       "item_code": "A9DE3720",
       "qty": 1.0,
       "description": "ACTI 9 iCV40N 3PN C 20A 30mA",
-      "your_order": "CF0-200206717"
+      "your_order": "CF0-200206748"
     },
     {
       "item_code": "A9DE3740",
@@ -1099,7 +1026,8 @@ TOTAL : 158 items extraits
       "item_code": "A9R11491",
       "qty": 10.0,
       "description": null,
-      "your_order": "CF0-200206748"
+      "your_order": "CF0-200205606"
     }
-  ]
+  ],
+  "orders": null
 }

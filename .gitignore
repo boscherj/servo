@@ -21,3 +21,5 @@ src/mon_projet/assets/.DS_Store
 src/servo.egg-info/
 sandbox/
 .coverage
+src/mon_projet/plumber_step2_generic.py
+src/mon_projet/plumber_step2_generic_test.py

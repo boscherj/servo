@@ -1,0 +1,805 @@
+---- TEXTE PDF (début) ----
+PACKING LIST 41806
+Document Date: 07.07.2025
+Purchase order nr: CF0-200205595,
+CF0-200205632, CF0-200205739,
+CF0-200205809, CF0-200205916,
+CF0-200206215, CF0-200206279,
+CF0-200206299, CF0-200206353,
+CF0-200206372, CF0-200206396,
+CF0-200206433, CF0-200206451,
+CF0-200206508, CF0-200206552,
+CF0-200206594, CF0-200206634,
+CF0-200206655, CF0-200206685,
+CF0-200206732, CF0-200206772,
+CF0-200206797, CF0-200206828,
+CF0-200206872, CF0-200206901,
+CF0-200206902, CF0-200206955
+BUYER: SELLER:
+SARL SERVO Prof-Elec OÜ
+3 Rue du Tregor, 35140
+Saint-Aubin-du-Cormier, France Jaama tn 167-2a, Tartu, Estonia, 50705
+VAT No: FR78750067654 Reg No: 17028801
+VAT No: EE102758140
+TERMS & CONDITIONS:
+Delivery Terms: DDP | Delivered Duty Paid
+Notes:
+Net Weight: 182.462 kgs
+Quan Unit Total
+# Code Description HS Code CoO
+tity Weight Weight
+Purchase order CF0-200205595
+---- FIN EXTRAIT ----
+[DBG] PDF_PATH = /Users/jackieboscher/Dev/servo/src/mon_projet/assets/pdfs/6_PROF ELEC_PL#41806_SCHENJKER TLL1700993.pdf
+[DBG] CONFIG_PATH = /Users/jackieboscher/Dev/servo/src/mon_projet/assets/json/config_fournisseurs.json
+[DBG] suppliers in config = ['Electric Systems Ltd', 'Linear Supply Solutions (Europe) BV', 'Linden Electro', 'Prof-Elec']
+[DBG] supplier chosen = Prof-Elec
+[DBG] Mode: Linden/Prof-Elec (multiline)
+[DBG] 🔵 _parse_multiline_items START: 350 lines
+[DBG] Found 120 items, 28 headers
+[DBG] 🟢 _parse_multiline_items END: 120 items
+
+================================================================================
+RÉSUMÉ - Prof-Elec
+================================================================================
+
+Item 1:
+  Numéro de commande client: CF0-200205632
+  Code article        : A9A26969
+  Quantité livrée     : 4.0
+  Description         : release, 220...240 V AC
+
+Item 2:
+  Numéro de commande client: CF0-200205739
+  Code article        : 004850
+  Quantité livrée     : 6.0
+  Description         : TERMINAL BLOCK BLACK 4 OUTPUTS
+
+Item 3:
+  Numéro de commande client: CF0-200205809
+  Code article        : 001921
+  Quantité livrée     : 1.0
+  Description         : PLEXO3 CABINET IP65 1X12M
+
+Item 4:
+  Numéro de commande client: CF0-200205809
+  Code article        : A9A26969
+  Quantité livrée     : 1.0
+  Description         : release, 220...240 V AC
+
+Item 5:
+  Numéro de commande client: CF0-200205916
+  Code article        : A9A26969
+  Quantité livrée     : 1.0
+  Description         : release, 220...240 V AC
+
+... et 115 autres items
+
+TOTAL: 120 items
+
+{
+  "supplier": "Prof-Elec",
+  "items": [
+    {
+      "item_code": "A9A26969",
+      "qty": 4.0,
+      "description": "release, 220...240 V AC",
+      "your_order": "CF0-200205632"
+    },
+    {
+      "item_code": "004850",
+      "qty": 6.0,
+      "description": "TERMINAL BLOCK BLACK 4 OUTPUTS",
+      "your_order": "CF0-200205739"
+    },
+    {
+      "item_code": "001921",
+      "qty": 1.0,
+      "description": "PLEXO3 CABINET IP65 1X12M",
+      "your_order": "CF0-200205809"
+    },
+    {
+      "item_code": "A9A26969",
+      "qty": 1.0,
+      "description": "release, 220...240 V AC",
+      "your_order": "CF0-200205809"
+    },
+    {
+      "item_code": "A9A26969",
+      "qty": 1.0,
+      "description": "release, 220...240 V AC",
+      "your_order": "CF0-200205916"
+    },
+    {
+      "item_code": "A9A26969",
+      "qty": 8.0,
+      "description": "release, 220...240 V AC",
+      "your_order": "CF0-200206215"
+    },
+    {
+      "item_code": "A9F75416",
+      "qty": 4.0,
+      "description": "B",
+      "your_order": "CF0-200206279"
+    },
+    {
+      "item_code": "LC1D38P7",
+      "qty": 2.0,
+      "description": "<= 440 V 38 A 230 V AC 50/60 Hz coil",
+      "your_order": "CF0-200206279"
+    },
+    {
+      "item_code": "ZB5AA3",
+      "qty": 1.0,
+      "description": "green, 22, spring return, unmarked",
+      "your_order": "CF0-200206299"
+    },
+    {
+      "item_code": "A9F75416",
+      "qty": 6.0,
+      "description": "B",
+      "your_order": "CF0-200206353"
+    },
+    {
+      "item_code": "A9F75450",
+      "qty": 4.0,
+      "description": "B",
+      "your_order": "CF0-200206353"
+    },
+    {
+      "item_code": "A9F75416",
+      "qty": 6.0,
+      "description": "B",
+      "your_order": "CF0-200206372"
+    },
+    {
+      "item_code": "A9F75420",
+      "qty": 6.0,
+      "description": "B",
+      "your_order": "CF0-200206372"
+    },
+    {
+      "item_code": "A9F75450",
+      "qty": 1.0,
+      "description": "B",
+      "your_order": "CF0-200206372"
+    },
+    {
+      "item_code": "A9F75416",
+      "qty": 6.0,
+      "description": "B",
+      "your_order": "CF0-200206396"
+    },
+    {
+      "item_code": "A9F75450",
+      "qty": 2.0,
+      "description": "B",
+      "your_order": "CF0-200206396"
+    },
+    {
+      "item_code": "XB4BVB4",
+      "qty": 21.0,
+      "description": "lens with integral LED, 24 V AC/DC",
+      "your_order": "CF0-200206396"
+    },
+    {
+      "item_code": "A9C20732",
+      "qty": 1.0,
+      "description": "iCT 25A 2NO 230...240V 50Hz contactor",
+      "your_order": "CF0-200206396"
+    },
+    {
+      "item_code": "A9F75420",
+      "qty": 6.0,
+      "description": "B",
+      "your_order": "CF0-200206396"
+    },
+    {
+      "item_code": "A9S65240",
+      "qty": 1.0,
+      "description": "switch disconnector iSW 2P 40 A 415 V",
+      "your_order": "CF0-200206396"
+    },
+    {
+      "item_code": "XB4BD21",
+      "qty": 15.0,
+      "description": "22, 2 positions, stay put, 1 NO",
+      "your_order": "CF0-200206396"
+    },
+    {
+      "item_code": "XB4BVB1",
+      "qty": 1.0,
+      "description": "lens with integral LED, 24 V AC/DC",
+      "your_order": "CF0-200206433"
+    },
+    {
+      "item_code": "XB4BVB4",
+      "qty": 4.0,
+      "description": "lens with integral LED, 24 V AC/DC",
+      "your_order": "CF0-200206433"
+    },
+    {
+      "item_code": "ZB5AA3",
+      "qty": 1.0,
+      "description": "green, 22, spring return, unmarked",
+      "your_order": "CF0-200206433"
+    },
+    {
+      "item_code": "A9C20732",
+      "qty": 1.0,
+      "description": "iCT 25A 2NO 230...240V 50Hz contactor",
+      "your_order": "CF0-200206451"
+    },
+    {
+      "item_code": "A9F75416",
+      "qty": 6.0,
+      "description": "B",
+      "your_order": "CF0-200206451"
+    },
+    {
+      "item_code": "A9S65240",
+      "qty": 1.0,
+      "description": "switch disconnector iSW 2P 40 A 415 V",
+      "your_order": "CF0-200206451"
+    },
+    {
+      "item_code": "XB7EV06MP",
+      "qty": 1.0,
+      "description": "blue, 22, integral LED, 230¦240 V AC",
+      "your_order": "CF0-200206451"
+    },
+    {
+      "item_code": "A9F75420",
+      "qty": 6.0,
+      "description": "B",
+      "your_order": "CF0-200206508"
+    },
+    {
+      "item_code": "A9F75416",
+      "qty": 6.0,
+      "description": "B",
+      "your_order": "CF0-200206508"
+    },
+    {
+      "item_code": "A9F75420",
+      "qty": 6.0,
+      "description": "B",
+      "your_order": "CF0-200206508"
+    },
+    {
+      "item_code": "XALD02",
+      "qty": 3.0,
+      "description": "plastic, dark grey lid, for push button 22, 2",
+      "your_order": "CF0-200206508"
+    },
+    {
+      "item_code": "XB4BVB1",
+      "qty": 9.0,
+      "description": "lens with integral LED, 24 V AC/DC",
+      "your_order": "CF0-200206508"
+    },
+    {
+      "item_code": "XB4BVB4",
+      "qty": 1.0,
+      "description": "lens with integral LED, 24 V AC/DC",
+      "your_order": "CF0-200206552"
+    },
+    {
+      "item_code": "XB5AA31",
+      "qty": 3.0,
+      "description": "green, 22, spring return, unmarked, 1 NO",
+      "your_order": "CF0-200206552"
+    },
+    {
+      "item_code": "ZB5AZ102",
+      "qty": 10.0,
+      "description": "body/fixing collar, plastic, screw clamp terminal,",
+      "your_order": "CF0-200206552"
+    },
+    {
+      "item_code": "A9C20732",
+      "qty": 9.0,
+      "description": "iCT 25A 2NO 230...240V 50Hz contactor",
+      "your_order": "CF0-200206552"
+    },
+    {
+      "item_code": "A9F75416",
+      "qty": 6.0,
+      "description": "B",
+      "your_order": "CF0-200206552"
+    },
+    {
+      "item_code": "A9F75450",
+      "qty": 2.0,
+      "description": "B",
+      "your_order": "CF0-200206552"
+    },
+    {
+      "item_code": "A9S65240",
+      "qty": 4.0,
+      "description": "switch disconnector iSW 2P 40 A 415 V",
+      "your_order": "CF0-200206594"
+    },
+    {
+      "item_code": "A9V44225",
+      "qty": 4.0,
+      "description": "ADD",
+      "your_order": "CF0-200206594"
+    },
+    {
+      "item_code": "XB4BVB4",
+      "qty": 2.0,
+      "description": "lens with integral LED, 24 V AC/DC",
+      "your_order": "CF0-200206594"
+    },
+    {
+      "item_code": "XB4BVM1",
+      "qty": 3.0,
+      "description": "lens with integral LED, 230...240 VAC",
+      "your_order": "CF0-200206594"
+    },
+    {
+      "item_code": "A9N61511",
+      "qty": 12.0,
+      "description": "curve",
+      "your_order": "CF0-200206634"
+    },
+    {
+      "item_code": "A9S65240",
+      "qty": 1.0,
+      "description": "switch disconnector iSW 2P 40 A 415 V",
+      "your_order": "CF0-200206634"
+    },
+    {
+      "item_code": "A9V41440",
+      "qty": 2.0,
+      "description": "ACTI9 VIGI IC60 4P 40A 30MA AC-TYPE ADD-",
+      "your_order": "CF0-200206634"
+    },
+    {
+      "item_code": "NSYSBM406012",
+      "qty": 2.0,
+      "description": "H400xW600xD120 IP66 IK10 RAL 7035",
+      "your_order": "CF0-200206634"
+    },
+    {
+      "item_code": "XB4BVB4",
+      "qty": 26.0,
+      "description": "lens with integral LED, 24 V AC/DC",
+      "your_order": "CF0-200206634"
+    },
+    {
+      "item_code": "A9C20864",
+      "qty": 4.0,
+      "description": "iCT 63A 4NO 220...240V 50Hz contactor",
+      "your_order": "CF0-200206634"
+    },
+    {
+      "item_code": "A9C21834",
+      "qty": 1.0,
+      "description": "iCT 25A 4NO 220...240V 50Hz MO contact",
+      "your_order": "CF0-200206634"
+    },
+    {
+      "item_code": "A9C22712",
+      "qty": 1.0,
+      "description": "iCT 16A 2NO 230...240V 50Hz contactor",
+      "your_order": "CF0-200206634"
+    },
+    {
+      "item_code": "A9F75102",
+      "qty": 2.0,
+      "description": "BR",
+      "your_order": "CF0-200206634"
+    },
+    {
+      "item_code": "A9F75416",
+      "qty": 6.0,
+      "description": "B",
+      "your_order": "CF0-200206634"
+    },
+    {
+      "item_code": "A9F75420",
+      "qty": 6.0,
+      "description": "B",
+      "your_order": "CF0-200206634"
+    },
+    {
+      "item_code": "A9F75425",
+      "qty": 3.0,
+      "description": "B",
+      "your_order": "CF0-200206634"
+    },
+    {
+      "item_code": "A9R31491",
+      "qty": 1.0,
+      "description": "Acti9 iID RCCB 4P 100A 30mA type ASI",
+      "your_order": "CF0-200206634"
+    },
+    {
+      "item_code": "A9V41225",
+      "qty": 2.0,
+      "description": "ACTI9 VIGI IC60 2P 25A 30MA AC-TYPE ADD-",
+      "your_order": "CF0-200206634"
+    },
+    {
+      "item_code": "A9V44225",
+      "qty": 2.0,
+      "description": "ADD",
+      "your_order": "CF0-200206634"
+    },
+    {
+      "item_code": "A9V44425",
+      "qty": 1.0,
+      "description": "ADD",
+      "your_order": "CF0-200206634"
+    },
+    {
+      "item_code": "CCT15482",
+      "qty": 6.0,
+      "description": "Acti9 IC100 (2 100 lux) twilight switch",
+      "your_order": "CF0-200206634"
+    },
+    {
+      "item_code": "XB4BVB1",
+      "qty": 5.0,
+      "description": "lens with integral LED, 24 V AC/DC",
+      "your_order": "CF0-200206634"
+    },
+    {
+      "item_code": "XB4BVB4",
+      "qty": 4.0,
+      "description": "lens with integral LED, 24 V AC/DC",
+      "your_order": "CF0-200206655"
+    },
+    {
+      "item_code": "XB5AA21",
+      "qty": 10.0,
+      "description": "black, 22, spring return, unmarked, 1 NO",
+      "your_order": "CF0-200206655"
+    },
+    {
+      "item_code": "ZB5AA3",
+      "qty": 1.0,
+      "description": "green, 22, spring return, unmarked",
+      "your_order": "CF0-200206655"
+    },
+    {
+      "item_code": "A9C20732",
+      "qty": 1.0,
+      "description": "iCT 25A 2NO 230...240V 50Hz contactor",
+      "your_order": "CF0-200206655"
+    },
+    {
+      "item_code": "A9F75425",
+      "qty": 2.0,
+      "description": "B",
+      "your_order": "CF0-200206655"
+    },
+    {
+      "item_code": "A9N61508",
+      "qty": 9.0,
+      "description": "curve",
+      "your_order": "CF0-200206685"
+    },
+    {
+      "item_code": "A9V41225",
+      "qty": 1.0,
+      "description": "ACTI9 VIGI IC60 2P 25A 30MA AC-TYPE ADD-",
+      "your_order": "CF0-200206685"
+    },
+    {
+      "item_code": "A9V41440",
+      "qty": 1.0,
+      "description": "ACTI9 VIGI IC60 4P 40A 30MA AC-TYPE ADD-",
+      "your_order": "CF0-200206685"
+    },
+    {
+      "item_code": "CAD32B7",
+      "qty": 11.0,
+      "description": "V 24 V AC standard coil",
+      "your_order": "CF0-200206685"
+    },
+    {
+      "item_code": "XB4BVB4",
+      "qty": 27.0,
+      "description": "lens with integral LED, 24 V AC/DC",
+      "your_order": "CF0-200206685"
+    },
+    {
+      "item_code": "A9C20842",
+      "qty": 3.0,
+      "description": "AC",
+      "your_order": "CF0-200206685"
+    },
+    {
+      "item_code": "A9C22715",
+      "qty": 12.0,
+      "description": "iCT 16A 1NO 1NC 230...240V 50Hz contactor",
+      "your_order": "CF0-200206685"
+    },
+    {
+      "item_code": "A9E16070",
+      "qty": 1.0,
+      "description": "ACTI9 IC60N 4P 20A D MINIATURE CIRCUIT",
+      "your_order": "CF0-200206685"
+    },
+    {
+      "item_code": "A9F75420",
+      "qty": 6.0,
+      "description": "B",
+      "your_order": "CF0-200206732"
+    },
+    {
+      "item_code": "A9F75425",
+      "qty": 1.0,
+      "description": "B",
+      "your_order": "CF0-200206732"
+    },
+    {
+      "item_code": "A9R31491",
+      "qty": 1.0,
+      "description": "Acti9 iID RCCB 4P 100A 30mA type ASI",
+      "your_order": "CF0-200206732"
+    },
+    {
+      "item_code": "XB5AA61",
+      "qty": 10.0,
+      "description": "22, spring return, unmarked, 1 NO",
+      "your_order": "CF0-200206732"
+    },
+    {
+      "item_code": "A9C20732",
+      "qty": 1.0,
+      "description": "iCT 25A 2NO 230...240V 50Hz contactor",
+      "your_order": "CF0-200206732"
+    },
+    {
+      "item_code": "A9C21834",
+      "qty": 1.0,
+      "description": "iCT 25A 4NO 220...240V 50Hz MO contact",
+      "your_order": "CF0-200206732"
+    },
+    {
+      "item_code": "A9F75410",
+      "qty": 6.0,
+      "description": "B",
+      "your_order": "CF0-200206732"
+    },
+    {
+      "item_code": "A9F75416",
+      "qty": 12.0,
+      "description": "B",
+      "your_order": "CF0-200206732"
+    },
+    {
+      "item_code": "A9F75420",
+      "qty": 6.0,
+      "description": "B",
+      "your_order": "CF0-200206772"
+    },
+    {
+      "item_code": "A9F75450",
+      "qty": 1.0,
+      "description": "B",
+      "your_order": "CF0-200206772"
+    },
+    {
+      "item_code": "XB4BD25",
+      "qty": 20.0,
+      "description": "22, 2 positions, stay put, 1 NO+1 NC",
+      "your_order": "CF0-200206772"
+    },
+    {
+      "item_code": "A9C20132",
+      "qty": 3.0,
+      "description": "iCT 25A 2NO 24V 50Hz contactor",
+      "your_order": "CF0-200206772"
+    },
+    {
+      "item_code": "A9C20732",
+      "qty": 5.0,
+      "description": "iCT 25A 2NO 230...240V 50Hz contactor",
+      "your_order": "CF0-200206772"
+    },
+    {
+      "item_code": "A9C20864",
+      "qty": 8.0,
+      "description": "iCT 63A 4NO 220...240V 50Hz contactor",
+      "your_order": "CF0-200206772"
+    },
+    {
+      "item_code": "A9C23712",
+      "qty": 10.0,
+      "description": "iCT 16A 2NO 230...240V 50Hz MO contact",
+      "your_order": "CF0-200206772"
+    },
+    {
+      "item_code": "A9F74102",
+      "qty": 10.0,
+      "description": "BR",
+      "your_order": "CF0-200206772"
+    },
+    {
+      "item_code": "A9F75310",
+      "qty": 10.0,
+      "description": "B",
+      "your_order": "CF0-200206772"
+    },
+    {
+      "item_code": "A9F75420",
+      "qty": 6.0,
+      "description": "B",
+      "your_order": "CF0-200206772"
+    },
+    {
+      "item_code": "A9F75425",
+      "qty": 3.0,
+      "description": "B",
+      "your_order": "CF0-200206797"
+    },
+    {
+      "item_code": "LRD07",
+      "qty": 3.0,
+      "description": "1.6...2.5 A class 10A",
+      "your_order": "CF0-200206797"
+    },
+    {
+      "item_code": "XB7NS8445",
+      "qty": 1.0,
+      "description": "plastic, red mushroom 40, 22, latching turn to",
+      "your_order": "CF0-200206797"
+    },
+    {
+      "item_code": "A9C22712",
+      "qty": 3.0,
+      "description": "iCT 16A 2NO 230...240V 50Hz contactor",
+      "your_order": "CF0-200206797"
+    },
+    {
+      "item_code": "A9F75310",
+      "qty": 4.0,
+      "description": "B",
+      "your_order": "CF0-200206797"
+    },
+    {
+      "item_code": "A9F75416",
+      "qty": 6.0,
+      "description": "B",
+      "your_order": "CF0-200206797"
+    },
+    {
+      "item_code": "A9F75420",
+      "qty": 6.0,
+      "description": "B",
+      "your_order": "CF0-200206797"
+    },
+    {
+      "item_code": "A9F75425",
+      "qty": 2.0,
+      "description": "B",
+      "your_order": "CF0-200206797"
+    },
+    {
+      "item_code": "A9N61504",
+      "qty": 1.0,
+      "description": "curve",
+      "your_order": "CF0-200206828"
+    },
+    {
+      "item_code": "A9R44240",
+      "qty": 4.0,
+      "description": "Acti9 iID RCCB 2P 40A 300mA type AC",
+      "your_order": "CF0-200206828"
+    },
+    {
+      "item_code": "A9R44440",
+      "qty": 1.0,
+      "description": "Acti9 iID RCCB 4P 40A 300mA type AC",
+      "your_order": "CF0-200206828"
+    },
+    {
+      "item_code": "A9S65291",
+      "qty": 1.0,
+      "description": "switch disconnector iSW 2P 100 A 415 V",
+      "your_order": "CF0-200206828"
+    },
+    {
+      "item_code": "LRD07",
+      "qty": 4.0,
+      "description": "1.6...2.5 A class 10A",
+      "your_order": "CF0-200206828"
+    },
+    {
+      "item_code": "A9C21834",
+      "qty": 30.0,
+      "description": "iCT 25A 4NO 220...240V 50Hz MO contact",
+      "your_order": "CF0-200206872"
+    },
+    {
+      "item_code": "A9F75106",
+      "qty": 4.0,
+      "description": "BR",
+      "your_order": "CF0-200206872"
+    },
+    {
+      "item_code": "A9F75410",
+      "qty": 12.0,
+      "description": "B",
+      "your_order": "CF0-200206872"
+    },
+    {
+      "item_code": "A9L16294",
+      "qty": 5.0,
+      "description": "+ N 350V with remote transfer",
+      "your_order": "CF0-200206872"
+    },
+    {
+      "item_code": "A9C22722",
+      "qty": 1.0,
+      "description": "iCT 20A 2NO 230...240V 50Hz contactor",
+      "your_order": "CF0-200206872"
+    },
+    {
+      "item_code": "A9F74320",
+      "qty": 8.0,
+      "description": "iC60N 3P 20A C",
+      "your_order": "CF0-200206901"
+    },
+    {
+      "item_code": "A9F75416",
+      "qty": 18.0,
+      "description": "B",
+      "your_order": "CF0-200206901"
+    },
+    {
+      "item_code": "LRD07",
+      "qty": 1.0,
+      "description": "1.6...2.5 A class 10A",
+      "your_order": "CF0-200206901"
+    },
+    {
+      "item_code": "XB7EV03MP",
+      "qty": 1.0,
+      "description": "green, 22, integral LED, 230¦240 V AC",
+      "your_order": "CF0-200206901"
+    },
+    {
+      "item_code": "A9C22722",
+      "qty": 20.0,
+      "description": "iCT 20A 2NO 230...240V 50Hz contactor",
+      "your_order": "CF0-200206902"
+    },
+    {
+      "item_code": "A9F75416",
+      "qty": 21.0,
+      "description": "B",
+      "your_order": "CF0-200206955"
+    },
+    {
+      "item_code": "A9F75232",
+      "qty": 14.0,
+      "description": "B",
+      "your_order": "CF0-200206955"
+    },
+    {
+      "item_code": "A9F75440",
+      "qty": 14.0,
+      "description": "B",
+      "your_order": "CF0-200206955"
+    },
+    {
+      "item_code": "A9V41225",
+      "qty": 1.0,
+      "description": "ACTI9 VIGI IC60 2P 25A 30MA AC-TYPE ADD-",
+      "your_order": "CF0-200206955"
+    },
+    {
+      "item_code": "LRD07",
+      "qty": 2.0,
+      "description": "1.6...2.5 A class 10A",
+      "your_order": "CF0-200206955"
+    }
+  ],
+  "orders": null
+}

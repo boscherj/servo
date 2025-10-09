@@ -51,7 +51,6 @@
         "description": "description"
       }
     },
-
     "Linear Supply Solutions (Europe) BV": {
       "detect": {
         "must_contain_any": [
@@ -79,7 +78,6 @@
         "description": "description"
       }
     },
-
     "Linden Electro": {
       "detect": {
         "must_contain_any": [
@@ -89,24 +87,18 @@
         ]
       },
       "block": {
-        "start_line_regex": "^Pos\\.?\\s+Item\\s+Qty\\s+Net\\s+Price\\s+Total$",
+        "start_line_regex": "^Pos\\.?\\s+Item\\s+Qty\\s+Net\\s+Price\\s+Total",
         "stop_line_regex": null
       },
-      "item_mode": "multiline",
-      "header_regex": "Your\\s+order\\s+no\\.\\s*:?\\s*(?P<your_order_no>CF0-\\d+)",
-      "multiline_item": {
-        "start_regex": "^(?P<pos>\\d+)\\s+(?P<item>[A-Z0-9\\-]+)\\s+(?P<qty>[0-9][0-9\\.,]*)\\s+[0-9][0-9\\.,]*\\s+[0-9][0-9\\.,]*$",
-        "qty_regex": "\\b(?P<qty>[0-9][0-9\\.,]*)\\b",
-        "desc_regex": "^(?P<desc>(?!Manufacturer:|Customs\\s+Tariff|Your\\s+order|Linden\\s+order:|Subtotal|Pos\\.\\s+Item|^\\d+\\s+[A-Z0-9]).+)$",
-        "max_follow_lines": 5,
-        "code_group": "item",
-        "qty_group": "qty",
-        "desc_group": "desc"
-      },
+      "item_regex": "^(?P<pos>\\d+)\\s+(?P<item_code>[A-Z0-9\\-]+)\\s+(?P<qty>[\\d,\\.]+)\\s+(?P<net_price>[\\d,\\.]+)\\s+(?P<total>[\\d,\\.]+)",
       "post": {
-        "int_fields": [],
+        "int_fields": [
+          "pos"
+        ],
         "float_fields": [
-          "qty"
+          "qty",
+          "net_price",
+          "total"
         ]
       },
       "field_mapping": {
@@ -116,35 +108,31 @@
         "description": "description"
       }
     },
-
-
     "Prof-Elec": {
       "detect": {
         "must_contain_any": [
           "Prof-Elec",
           "PACKING LIST",
-          "Purchase order"
+          "Purchase order nr:"
         ]
       },
       "multi_blocks": true,
-      "item_mode": "multiline",
-      "header_regex": "^Purchase\\s+order(?:\\s+nr:)?\\s*(?P<order>CF0-\\d+)",
-      "multiline_item": {
-        "start_regex": "^(?P<num>\\d+)\\s+(?P<item>[A-Z0-9\\-]+)\\s+(?:(?P<description_inline>.+?)\\s+)?(?P<hs>\\d{8})\\s+(?P<coo>[A-Z]{2})\\s+(?P<qty>\\d+(?:\\.\\d+)?)\\s+(?P<unit_weight>\\d+\\.\\d+)\\s+(?P<total_weight>\\d+\\.\\d+)$",
-        "desc_regex": "^(?P<desc>(?!Purchase\\s+order|BUYER:|SELLER:|Quan\\s+Unit|#\\s+Code|tity\\s+Weight|VAT\\s+No:|Reg\\s+No:|Delivery\\s+Terms:|Document\\s+Date:|PACKING\\s+LIST|TERMS\\s+&\\s+CONDITIONS:|Notes:|Net\\s+Weight:|\\d+\\s+[A-Z0-9]).+)$",
-        "max_follow_lines": 5,
-        "code_group": "item",
-        "qty_group": "qty",
-        "desc_group": "desc"
-      },
+      "header_regex": "^Purchase order (?P<purchase_order>CF0-\\d+)$",
+      "item_regex": "^(?P<num>\\d+)\\s+(?P<code>\\S+)\\s+(?P<description>.+?)\\s+(?P<hs_code>\\d{8})\\s+(?P<coo>[A-Z]{2})\\s+(?P<quantity>\\d+(?:\\.\\d+)?)\\s+(?P<unit_weight>\\d+\\.\\d+)\\s+(?P<total_weight>\\d+\\.\\d+)$",
       "post": {
-        "int_fields": [],
-        "float_fields": ["qty", "unit_weight", "total_weight"]
+        "int_fields": [
+          "num"
+        ],
+        "float_fields": [
+          "quantity",
+          "unit_weight",
+          "total_weight"
+        ]
       },
       "field_mapping": {
-        "order_number": "your_order",
-        "item_code": "item_code",
-        "quantity_delivered": "qty",
+        "order_number": "header.purchase_order",
+        "item_code": "code",
+        "quantity_delivered": "quantity",
         "description": "description"
       }
     }

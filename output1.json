@@ -1,0 +1,60 @@
+---- TEXTE PDF (début) ----
+DESPATCH NOTE 83-48931
+DELIVERY ADDRESS SUPPLIER Shipment No. 83-48931
+SARL SERVO Electric Systems Ltd Despatch Date 2025-07-21
+3, rue du trégor ZAC de la Mottais FAO Electric Systems Ltd Warehouse Home
+ST AUBIN DU CORMIER Marconiweg 3
+35140 Tholen Customer Account No. SERV'O
+France 4691 SV Contact Name
+Contact Tel 0299696941
+Document No Customer Ref Internal Code Item Code Description Qty Despatched
+0000432199 CF0-200207146 226113 A9A26946R Voltage release - iMX+OF - tripping unit - 220..415 VAC 45
+0000432167 CF0-200207122 4299176 A9F77306R IC60N - miniature circuit breaker - 3P - 6A - C curve 5
+Page 1 of 1
+---- FIN EXTRAIT ----
+[DBG] PDF_PATH = /Users/jackieboscher/Dev/servo/src/mon_projet/assets/pdfs/2_ESL_48931.pdf
+[DBG] CONFIG_PATH = /Users/jackieboscher/Dev/servo/src/mon_projet/assets/json/config_fournisseurs.json
+[DBG] suppliers in config = ['Electric Systems Ltd', 'Linear Supply Solutions (Europe) BV', 'Linden Electro', 'Prof-Elec']
+[DBG] supplier chosen = Electric Systems Ltd
+[DBG] Mode: ESL (single block)
+
+================================================================================
+RÉSUMÉ - Electric Systems Ltd
+================================================================================
+
+Item 1:
+  Numéro de commande client: CF0-200207146
+  Code article        : A9A26946R
+  Quantité livrée     : 45
+  Description         : Voltage release - iMX+OF - tripping unit - 220..415 VAC
+
+Item 2:
+  Numéro de commande client: CF0-200207122
+  Code article        : A9F77306R
+  Quantité livrée     : 5
+  Description         : IC60N - miniature circuit breaker - 3P - 6A - C curve
+
+TOTAL: 2 items
+
+{
+  "supplier": "Electric Systems Ltd",
+  "items": [
+    {
+      "document_no": "0000432199",
+      "customer_ref": "CF0-200207146",
+      "internal_code": "226113",
+      "item_code": "A9A26946R",
+      "description": "Voltage release - iMX+OF - tripping unit - 220..415 VAC",
+      "qty_despatched": 45
+    },
+    {
+      "document_no": "0000432167",
+      "customer_ref": "CF0-200207122",
+      "internal_code": "4299176",
+      "item_code": "A9F77306R",
+      "description": "IC60N - miniature circuit breaker - 3P - 6A - C curve",
+      "qty_despatched": 5
+    }
+  ],
+  "orders": null
+}

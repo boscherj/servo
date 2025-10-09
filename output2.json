@@ -1,0 +1,1789 @@
+---- TEXTE PDF (début) ----
+Linear Supply Solutions (Europe) BV
+Haarlemmerstraatweg 83, Hal A7
+1165 MK, Halfweg
+The Netherlands
+Tel: +31 20 225 4855
+Email: office@linearss.com
+www.linearss.com
+Bon de livraison
+Adresse de livraison Nom et adresse Client
+Achat electrique Servo - Achat electrique Compte N°: C3948
+3, rue du Trégor 3, rue du Trégor
+ZAC de la mottais ZAC de la mottais Date: 23/07/2025
+St Aubin du Cormier St Aubin du Cormier
+Livraison N°: 42939
+35140 35140
+France France Incoterms: DAP
+Transporteur
+FedEx Regional Economy
+Commande Client N°: CF0-200206486 Commande Linear N°: CO34958 Date commande: 27/05/2025
+Qté Précedemment Qté livrée Qté à
+Pos Marque Code Description
+Commandée Livrée ce jour suivre
+11 Schneider GVAE11 GVAE11 1 0 1 0
+Commande Client N°: CF0-200206798 Commande Linear N°: CO35456 Date commande: 16/06/2025
+Qté Précedemment Qté livrée Qté à
+Pos Marque Code Description
+Commandée Livrée ce jour suivre
+12 Schneider A9R21440 IID 4P 40A 30MA A 3 0 3 0
+16 Schneider GVAE11 GVAE11 13 0 13 0
+Commande Client N°: CF0-200206003 Commande Linear N°: CO34197 Date commande: 25/04/2025
+---- FIN EXTRAIT ----
+[DBG] PDF_PATH = /Users/jackieboscher/Dev/servo/src/mon_projet/assets/pdfs/3_LINEAR_42939.pdf
+[DBG] CONFIG_PATH = /Users/jackieboscher/Dev/servo/src/mon_projet/assets/json/config_fournisseurs.json
+[DBG] suppliers in config = ['Electric Systems Ltd', 'Linear Supply Solutions (Europe) BV', 'Linden Electro', 'Prof-Elec']
+[DBG] supplier chosen = Linear Supply Solutions (Europe) BV
+[DBG] Mode: Linear (multi_blocks + item_regex)
+
+================================================================================
+RÉSUMÉ - Linear Supply Solutions (Europe) BV
+================================================================================
+
+--- Commande CF0-200206486 ---
+
+Item 1:
+  Numéro de commande client: CF0-200206486
+  Code article        : GVAE11
+  Quantité livrée     : 1
+  Description         : GVAE11
+
+--- Commande CF0-200206798 ---
+
+Item 1:
+  Numéro de commande client: CF0-200206798
+  Code article        : A9R21440
+  Quantité livrée     : 3
+  Description         : IID 4P 40A 30MA A
+
+Item 2:
+  Numéro de commande client: CF0-200206798
+  Code article        : GVAE11
+  Quantité livrée     : 13
+  Description         : GVAE11
+
+--- Commande CF0-200206003 ---
+
+Item 1:
+  Numéro de commande client: CF0-200206003
+  Code article        : LC1K0601B7
+  Quantité livrée     : 2
+  Description         : Contactor-3NO 6A AC3 poles
+
+... et 65 autres items
+
+TOTAL: 70 items
+
+{
+  "supplier": "Linear Supply Solutions (Europe) BV",
+  "items": [
+    {
+      "pos": 11,
+      "marque": "Schneider",
+      "code": "GVAE11",
+      "description": "GVAE11",
+      "qte_commandee": 1,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 1,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 12,
+      "marque": "Schneider",
+      "code": "A9R21440",
+      "description": "IID 4P 40A 30MA A",
+      "qte_commandee": 3,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 3,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 16,
+      "marque": "Schneider",
+      "code": "GVAE11",
+      "description": "GVAE11",
+      "qte_commandee": 13,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 13,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 18,
+      "marque": "Schneider",
+      "code": "LC1K0601B7",
+      "description": "Contactor-3NO 6A AC3 poles",
+      "qte_commandee": 2,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 2,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 13,
+      "marque": "Schneider",
+      "code": "GVAE11",
+      "description": "GVAE11",
+      "qte_commandee": 58,
+      "precedemment_livree": 11,
+      "qte_livree_ce_jour": 47,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 12,
+      "marque": "Schneider",
+      "code": "GVAE11",
+      "description": "GVAE11",
+      "qte_commandee": 17,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 17,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 13,
+      "marque": "Schneider",
+      "code": "GVAE11",
+      "description": "GVAE11",
+      "qte_commandee": 2,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 2,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 20,
+      "marque": "Schneider",
+      "code": "GVAE11",
+      "description": "GVAE11",
+      "qte_commandee": 15,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 15,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 24,
+      "marque": "Hager",
+      "code": "SFT240",
+      "description": "2P 40A Centre Off Changeover , T",
+      "qte_commandee": 4,
+      "precedemment_livree": 2,
+      "qte_livree_ce_jour": 2,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 10,
+      "marque": "Schneider",
+      "code": "GVAE11",
+      "description": "GVAE11",
+      "qte_commandee": 29,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 29,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 12,
+      "marque": "Schneider",
+      "code": "GVAE11",
+      "description": "GVAE11",
+      "qte_commandee": 7,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 7,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 11,
+      "marque": "Schneider",
+      "code": "GVAE11",
+      "description": "GVAE11",
+      "qte_commandee": 2,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 2,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 21,
+      "marque": "Hager",
+      "code": "SFT240",
+      "description": "2P 40A Centre Off Changeover , T",
+      "qte_commandee": 8,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 8,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 12,
+      "marque": "Schneider",
+      "code": "GVAE11",
+      "description": "GVAE11",
+      "qte_commandee": 12,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 12,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 10,
+      "marque": "Schneider",
+      "code": "GVAE11",
+      "description": "GVAE11",
+      "qte_commandee": 11,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 11,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 5,
+      "marque": "Schneider",
+      "code": "GVAE11",
+      "description": "GVAE11",
+      "qte_commandee": 3,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 3,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 13,
+      "marque": "Hager",
+      "code": "SFT240",
+      "description": "2P 40A Centre Off Changeover , T",
+      "qte_commandee": 1,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 1,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 18,
+      "marque": "Schneider",
+      "code": "GVAE11",
+      "description": "GVAE11",
+      "qte_commandee": 1,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 1,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 14,
+      "marque": "Schneider",
+      "code": "GVAE11",
+      "description": "GVAE11",
+      "qte_commandee": 31,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 31,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 17,
+      "marque": "Schneider",
+      "code": "GVAE11",
+      "description": "GVAE11",
+      "qte_commandee": 25,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 25,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 20,
+      "marque": "Hager",
+      "code": "SFT240",
+      "description": "2P 40A Centre Off Changeover , T",
+      "qte_commandee": 3,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 3,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 20,
+      "marque": "Hager",
+      "code": "SFT240",
+      "description": "2P 40A Centre Off Changeover , T",
+      "qte_commandee": 8,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 8,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 19,
+      "marque": "Schneider",
+      "code": "GVAE11",
+      "description": "GVAE11",
+      "qte_commandee": 1,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 1,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 27,
+      "marque": "Hager",
+      "code": "SFT240",
+      "description": "2P 40A Centre Off Changeover , T",
+      "qte_commandee": 11,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 11,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 9,
+      "marque": "Schneider",
+      "code": "GVAE11",
+      "description": "GVAE11",
+      "qte_commandee": 1,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 1,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 14,
+      "marque": "Hager",
+      "code": "SFT240",
+      "description": "2P 40A Centre Off Changeover , T",
+      "qte_commandee": 11,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 11,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 14,
+      "marque": "Hager",
+      "code": "SFT240",
+      "description": "2P 40A Centre Off Changeover , T",
+      "qte_commandee": 2,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 2,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 9,
+      "marque": "Schneider",
+      "code": "A9R21440",
+      "description": "IID 4P 40A 30MA A",
+      "qte_commandee": 5,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 5,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 13,
+      "marque": "Schneider",
+      "code": "GVAE11",
+      "description": "GVAE11",
+      "qte_commandee": 40,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 40,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 19,
+      "marque": "Hager",
+      "code": "SFT240",
+      "description": "2P 40A Centre Off Changeover , T",
+      "qte_commandee": 1,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 1,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 9,
+      "marque": "Schneider",
+      "code": "A9R21440",
+      "description": "IID 4P 40A 30MA A",
+      "qte_commandee": 3,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 3,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 15,
+      "marque": "Schneider",
+      "code": "GVAE11",
+      "description": "GVAE11",
+      "qte_commandee": 17,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 17,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 22,
+      "marque": "Hager",
+      "code": "SFT240",
+      "description": "2P 40A Centre Off Changeover , T",
+      "qte_commandee": 5,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 5,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 9,
+      "marque": "Schneider",
+      "code": "GVAE11",
+      "description": "GVAE11",
+      "qte_commandee": 5,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 5,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 11,
+      "marque": "Hager",
+      "code": "SFT240",
+      "description": "2P 40A Centre Off Changeover , T",
+      "qte_commandee": 6,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 6,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 8,
+      "marque": "Schneider",
+      "code": "GVAE11",
+      "description": "GVAE11",
+      "qte_commandee": 8,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 8,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 12,
+      "marque": "Hager",
+      "code": "SFT240",
+      "description": "2P 40A Centre Off Changeover , T",
+      "qte_commandee": 2,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 2,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 9,
+      "marque": "Schneider",
+      "code": "GVAE11",
+      "description": "GVAE11",
+      "qte_commandee": 33,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 33,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 15,
+      "marque": "Hager",
+      "code": "SFT240",
+      "description": "2P 40A Centre Off Changeover , T",
+      "qte_commandee": 7,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 7,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 9,
+      "marque": "Schneider",
+      "code": "A9R21440",
+      "description": "IID 4P 40A 30MA A",
+      "qte_commandee": 4,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 4,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 14,
+      "marque": "Schneider",
+      "code": "A9R21440",
+      "description": "IID 4P 40A 30MA A",
+      "qte_commandee": 1,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 1,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 18,
+      "marque": "Schneider",
+      "code": "GVAE11",
+      "description": "GVAE11",
+      "qte_commandee": 10,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 10,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 7,
+      "marque": "ABB",
+      "code": "4TBA831025C0100",
+      "description": "4TBA831025C0100",
+      "qte_commandee": 1,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 1,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 8,
+      "marque": "Schneider",
+      "code": "GVAE11",
+      "description": "GVAE11",
+      "qte_commandee": 166,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 166,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 5,
+      "marque": "Schneider",
+      "code": "A9R21440",
+      "description": "IID 4P 40A 30MA A",
+      "qte_commandee": 20,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 20,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 11,
+      "marque": "Hager",
+      "code": "NGN440",
+      "description": "NGN440",
+      "qte_commandee": 1,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 1,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 1,
+      "marque": "Wago",
+      "code": "2273-205",
+      "description": "COMPACT splicing connector for",
+      "qte_commandee": 900,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 900,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 2,
+      "marque": "Schneider",
+      "code": "A9C15030",
+      "description": "ICT plus 20A 1P Uc 230VAC",
+      "qte_commandee": 1,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 1,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 3,
+      "marque": "Schneider",
+      "code": "A9S65292",
+      "description": "A9S65292",
+      "qte_commandee": 1,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 1,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 4,
+      "marque": "Schneider",
+      "code": "CA2KN40P7",
+      "description": "Control relay 4NO contacts",
+      "qte_commandee": 1,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 1,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 5,
+      "marque": "Legrand",
+      "code": "LEGRAND031950",
+      "description": "* PACK OF 100 * SCREW ON BA",
+      "qte_commandee": 16,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 16,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 6,
+      "marque": "Legrand",
+      "code": "LEGRAND037667",
+      "description": "* Pack of 250 * Ferrules in strips S",
+      "qte_commandee": 1,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 1,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 7,
+      "marque": "Legrand",
+      "code": "LEGRAND050342",
+      "description": "LEGRAND050342",
+      "qte_commandee": 40,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 40,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 8,
+      "marque": "Schneider",
+      "code": "NSYTBS16128",
+      "description": "NSYTBS16128",
+      "qte_commandee": 1,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 1,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 9,
+      "marque": "Schneider",
+      "code": "XALD05",
+      "description": "Control Station 5way emty",
+      "qte_commandee": 2,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 2,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 10,
+      "marque": "Schneider",
+      "code": "XB4BG21",
+      "description": "KeySw 2Pos 1NO keyremL",
+      "qte_commandee": 18,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 18,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 11,
+      "marque": "Schneider",
+      "code": "XB4BVB5",
+      "description": "Pilotlite 24V Yel LED",
+      "qte_commandee": 17,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 17,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 12,
+      "marque": "Schneider",
+      "code": "XB5AS8445",
+      "description": "PB Estop40mmtrigact Turnrel1NO",
+      "qte_commandee": 10,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 10,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 1,
+      "marque": "Schneider",
+      "code": "A9C20732",
+      "description": "iCT25A 2NO 230/240Vac 50Hz c",
+      "qte_commandee": 12,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 12,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 2,
+      "marque": "Schneider",
+      "code": "A9E18322",
+      "description": "ACTI9 IIL SINGLE INDICATOR LI",
+      "qte_commandee": 4,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 4,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 3,
+      "marque": "Schneider",
+      "code": "A9F74102",
+      "description": "IC60N 1P BREAKER 2A CURVE",
+      "qte_commandee": 9,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 9,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 4,
+      "marque": "Schneider",
+      "code": "A9F75310",
+      "description": "Acti9, iC60N circuit breaker 3P 10",
+      "qte_commandee": 3,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 3,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 5,
+      "marque": "Schneider",
+      "code": "A9F75316",
+      "description": "IC60N BREAKER 3P 16A D CUR",
+      "qte_commandee": 4,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 4,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 6,
+      "marque": "Schneider",
+      "code": "A9N15651",
+      "description": "A9N15651",
+      "qte_commandee": 1,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 1,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 7,
+      "marque": "Hager",
+      "code": "GP413P",
+      "description": "PLAIN DOOR FOR ENCLOSURE",
+      "qte_commandee": 4,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 4,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 8,
+      "marque": "Schneider",
+      "code": "LC1D25V7",
+      "description": "CONT 25A 400V50/60Hz",
+      "qte_commandee": 2,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 2,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 9,
+      "marque": "Schneider",
+      "code": "LE1D09V7",
+      "description": "DOL STARTER 9A 380/400V 50/6",
+      "qte_commandee": 10,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 10,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 10,
+      "marque": "Schneider",
+      "code": "LRD06",
+      "description": "OVERLOAD RELAY 1 to 1.7A",
+      "qte_commandee": 11,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 11,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 11,
+      "marque": "Schneider",
+      "code": "XB5AD33",
+      "description": "SelSw 3Pos STD/Hdle 2NO",
+      "qte_commandee": 10,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 10,
+      "qte_a_suivre": 0
+    },
+    {
+      "pos": 12,
+      "marque": "Schneider",
+      "code": "ZB4BV04",
+      "description": "PLight Head Red BA9",
+      "qte_commandee": 8,
+      "precedemment_livree": 0,
+      "qte_livree_ce_jour": 8,
+      "qte_a_suivre": 0
+    }
+  ],
+  "orders": [
+    {
+      "header": {
+        "commande_client": "CF0-200206486",
+        "commande_linear": "CO34958",
+        "date_commande": "27/05/2025"
+      },
+      "items": [
+        {
+          "pos": 11,
+          "marque": "Schneider",
+          "code": "GVAE11",
+          "description": "GVAE11",
+          "qte_commandee": 1,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 1,
+          "qte_a_suivre": 0
+        }
+      ]
+    },
+    {
+      "header": {
+        "commande_client": "CF0-200206798",
+        "commande_linear": "CO35456",
+        "date_commande": "16/06/2025"
+      },
+      "items": [
+        {
+          "pos": 12,
+          "marque": "Schneider",
+          "code": "A9R21440",
+          "description": "IID 4P 40A 30MA A",
+          "qte_commandee": 3,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 3,
+          "qte_a_suivre": 0
+        },
+        {
+          "pos": 16,
+          "marque": "Schneider",
+          "code": "GVAE11",
+          "description": "GVAE11",
+          "qte_commandee": 13,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 13,
+          "qte_a_suivre": 0
+        }
+      ]
+    },
+    {
+      "header": {
+        "commande_client": "CF0-200206003",
+        "commande_linear": "CO34197",
+        "date_commande": "25/04/2025"
+      },
+      "items": [
+        {
+          "pos": 18,
+          "marque": "Schneider",
+          "code": "LC1K0601B7",
+          "description": "Contactor-3NO 6A AC3 poles",
+          "qte_commandee": 2,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 2,
+          "qte_a_suivre": 0
+        }
+      ]
+    },
+    {
+      "header": {
+        "commande_client": "CF0-200206125",
+        "commande_linear": "CO34335",
+        "date_commande": "05/05/2025"
+      },
+      "items": [
+        {
+          "pos": 13,
+          "marque": "Schneider",
+          "code": "GVAE11",
+          "description": "GVAE11",
+          "qte_commandee": 58,
+          "precedemment_livree": 11,
+          "qte_livree_ce_jour": 47,
+          "qte_a_suivre": 0
+        }
+      ]
+    },
+    {
+      "header": {
+        "commande_client": "CF0-200206171",
+        "commande_linear": "CO34387",
+        "date_commande": "06/05/2025"
+      },
+      "items": [
+        {
+          "pos": 12,
+          "marque": "Schneider",
+          "code": "GVAE11",
+          "description": "GVAE11",
+          "qte_commandee": 17,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 17,
+          "qte_a_suivre": 0
+        }
+      ]
+    },
+    {
+      "header": {
+        "commande_client": "CF0-200206185",
+        "commande_linear": "CO34438",
+        "date_commande": "07/05/2025"
+      },
+      "items": [
+        {
+          "pos": 13,
+          "marque": "Schneider",
+          "code": "GVAE11",
+          "description": "GVAE11",
+          "qte_commandee": 2,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 2,
+          "qte_a_suivre": 0
+        }
+      ]
+    },
+    {
+      "header": {
+        "commande_client": "CF0-200206210",
+        "commande_linear": "CO34510",
+        "date_commande": "09/05/2025"
+      },
+      "items": [
+        {
+          "pos": 20,
+          "marque": "Schneider",
+          "code": "GVAE11",
+          "description": "GVAE11",
+          "qte_commandee": 15,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 15,
+          "qte_a_suivre": 0
+        }
+      ]
+    },
+    {
+      "header": {
+        "commande_client": "CF0-200206227",
+        "commande_linear": "CO34549",
+        "date_commande": "12/05/2025"
+      },
+      "items": [
+        {
+          "pos": 24,
+          "marque": "Hager",
+          "code": "SFT240",
+          "description": "2P 40A Centre Off Changeover , T",
+          "qte_commandee": 4,
+          "precedemment_livree": 2,
+          "qte_livree_ce_jour": 2,
+          "qte_a_suivre": 0
+        }
+      ]
+    },
+    {
+      "header": {
+        "commande_client": "CF0-200206300",
+        "commande_linear": "CO34668",
+        "date_commande": "15/05/2025"
+      },
+      "items": [
+        {
+          "pos": 10,
+          "marque": "Schneider",
+          "code": "GVAE11",
+          "description": "GVAE11",
+          "qte_commandee": 29,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 29,
+          "qte_a_suivre": 0
+        }
+      ]
+    },
+    {
+      "header": {
+        "commande_client": "CF0-200206325",
+        "commande_linear": "CO34722",
+        "date_commande": "16/05/2025"
+      },
+      "items": [
+        {
+          "pos": 12,
+          "marque": "Schneider",
+          "code": "GVAE11",
+          "description": "GVAE11",
+          "qte_commandee": 7,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 7,
+          "qte_a_suivre": 0
+        }
+      ]
+    },
+    {
+      "header": {
+        "commande_client": "CF0-200206373",
+        "commande_linear": "CO34784",
+        "date_commande": "20/05/2025"
+      },
+      "items": [
+        {
+          "pos": 11,
+          "marque": "Schneider",
+          "code": "GVAE11",
+          "description": "GVAE11",
+          "qte_commandee": 2,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 2,
+          "qte_a_suivre": 0
+        },
+        {
+          "pos": 21,
+          "marque": "Hager",
+          "code": "SFT240",
+          "description": "2P 40A Centre Off Changeover , T",
+          "qte_commandee": 8,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 8,
+          "qte_a_suivre": 0
+        }
+      ]
+    },
+    {
+      "header": {
+        "commande_client": "CF0-200206395",
+        "commande_linear": "CO34831",
+        "date_commande": "21/05/2025"
+      },
+      "items": [
+        {
+          "pos": 12,
+          "marque": "Schneider",
+          "code": "GVAE11",
+          "description": "GVAE11",
+          "qte_commandee": 12,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 12,
+          "qte_a_suivre": 0
+        }
+      ]
+    },
+    {
+      "header": {
+        "commande_client": "CF0-200206420",
+        "commande_linear": "CO34870",
+        "date_commande": "18/04/2025"
+      },
+      "items": [
+        {
+          "pos": 10,
+          "marque": "Schneider",
+          "code": "GVAE11",
+          "description": "GVAE11",
+          "qte_commandee": 11,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 11,
+          "qte_a_suivre": 0
+        }
+      ]
+    },
+    {
+      "header": {
+        "commande_client": "CF0-200206434",
+        "commande_linear": "CO34911",
+        "date_commande": "23/05/2025"
+      },
+      "items": [
+        {
+          "pos": 5,
+          "marque": "Schneider",
+          "code": "GVAE11",
+          "description": "GVAE11",
+          "qte_commandee": 3,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 3,
+          "qte_a_suivre": 0
+        },
+        {
+          "pos": 13,
+          "marque": "Hager",
+          "code": "SFT240",
+          "description": "2P 40A Centre Off Changeover , T",
+          "qte_commandee": 1,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 1,
+          "qte_a_suivre": 0
+        }
+      ]
+    },
+    {
+      "header": {
+        "commande_client": "CF0-200206452",
+        "commande_linear": "CO34941",
+        "date_commande": "27/05/2025"
+      },
+      "items": [
+        {
+          "pos": 18,
+          "marque": "Schneider",
+          "code": "GVAE11",
+          "description": "GVAE11",
+          "qte_commandee": 1,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 1,
+          "qte_a_suivre": 0
+        }
+      ]
+    },
+    {
+      "header": {
+        "commande_client": "CF0-200206509",
+        "commande_linear": "CO35014",
+        "date_commande": "28/05/2025"
+      },
+      "items": [
+        {
+          "pos": 14,
+          "marque": "Schneider",
+          "code": "GVAE11",
+          "description": "GVAE11",
+          "qte_commandee": 31,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 31,
+          "qte_a_suivre": 0
+        }
+      ]
+    },
+    {
+      "header": {
+        "commande_client": "CF0-200206530",
+        "commande_linear": "CO35090",
+        "date_commande": "02/06/2025"
+      },
+      "items": [
+        {
+          "pos": 17,
+          "marque": "Schneider",
+          "code": "GVAE11",
+          "description": "GVAE11",
+          "qte_commandee": 25,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 25,
+          "qte_a_suivre": 0
+        },
+        {
+          "pos": 20,
+          "marque": "Hager",
+          "code": "SFT240",
+          "description": "2P 40A Centre Off Changeover , T",
+          "qte_commandee": 3,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 3,
+          "qte_a_suivre": 0
+        }
+      ]
+    },
+    {
+      "header": {
+        "commande_client": "CF0-200206553",
+        "commande_linear": "CO35091",
+        "date_commande": "02/06/2025"
+      },
+      "items": [
+        {
+          "pos": 20,
+          "marque": "Hager",
+          "code": "SFT240",
+          "description": "2P 40A Centre Off Changeover , T",
+          "qte_commandee": 8,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 8,
+          "qte_a_suivre": 0
+        }
+      ]
+    },
+    {
+      "header": {
+        "commande_client": "CF0-200206597",
+        "commande_linear": "CO35161",
+        "date_commande": "03/06/2025"
+      },
+      "items": [
+        {
+          "pos": 19,
+          "marque": "Schneider",
+          "code": "GVAE11",
+          "description": "GVAE11",
+          "qte_commandee": 1,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 1,
+          "qte_a_suivre": 0
+        },
+        {
+          "pos": 27,
+          "marque": "Hager",
+          "code": "SFT240",
+          "description": "2P 40A Centre Off Changeover , T",
+          "qte_commandee": 11,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 11,
+          "qte_a_suivre": 0
+        }
+      ]
+    },
+    {
+      "header": {
+        "commande_client": "CF0-200206620",
+        "commande_linear": "CO35233",
+        "date_commande": "05/06/2025"
+      },
+      "items": [
+        {
+          "pos": 9,
+          "marque": "Schneider",
+          "code": "GVAE11",
+          "description": "GVAE11",
+          "qte_commandee": 1,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 1,
+          "qte_a_suivre": 0
+        },
+        {
+          "pos": 14,
+          "marque": "Hager",
+          "code": "SFT240",
+          "description": "2P 40A Centre Off Changeover , T",
+          "qte_commandee": 11,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 11,
+          "qte_a_suivre": 0
+        }
+      ]
+    },
+    {
+      "header": {
+        "commande_client": "CF0-200206635",
+        "commande_linear": "CO35234",
+        "date_commande": "05/06/2025"
+      },
+      "items": [
+        {
+          "pos": 14,
+          "marque": "Hager",
+          "code": "SFT240",
+          "description": "2P 40A Centre Off Changeover , T",
+          "qte_commandee": 2,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 2,
+          "qte_a_suivre": 0
+        }
+      ]
+    },
+    {
+      "header": {
+        "commande_client": "CF0-200206656",
+        "commande_linear": "CO35272",
+        "date_commande": "09/06/2025"
+      },
+      "items": [
+        {
+          "pos": 9,
+          "marque": "Schneider",
+          "code": "A9R21440",
+          "description": "IID 4P 40A 30MA A",
+          "qte_commandee": 5,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 5,
+          "qte_a_suivre": 0
+        },
+        {
+          "pos": 13,
+          "marque": "Schneider",
+          "code": "GVAE11",
+          "description": "GVAE11",
+          "qte_commandee": 40,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 40,
+          "qte_a_suivre": 0
+        },
+        {
+          "pos": 19,
+          "marque": "Hager",
+          "code": "SFT240",
+          "description": "2P 40A Centre Off Changeover , T",
+          "qte_commandee": 1,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 1,
+          "qte_a_suivre": 0
+        }
+      ]
+    },
+    {
+      "header": {
+        "commande_client": "CF0-200206687",
+        "commande_linear": "CO35279",
+        "date_commande": "09/06/2025"
+      },
+      "items": [
+        {
+          "pos": 9,
+          "marque": "Schneider",
+          "code": "A9R21440",
+          "description": "IID 4P 40A 30MA A",
+          "qte_commandee": 3,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 3,
+          "qte_a_suivre": 0
+        },
+        {
+          "pos": 15,
+          "marque": "Schneider",
+          "code": "GVAE11",
+          "description": "GVAE11",
+          "qte_commandee": 17,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 17,
+          "qte_a_suivre": 0
+        },
+        {
+          "pos": 22,
+          "marque": "Hager",
+          "code": "SFT240",
+          "description": "2P 40A Centre Off Changeover , T",
+          "qte_commandee": 5,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 5,
+          "qte_a_suivre": 0
+        }
+      ]
+    },
+    {
+      "header": {
+        "commande_client": "CF0-200206718",
+        "commande_linear": "CO35324",
+        "date_commande": "10/06/2025"
+      },
+      "items": [
+        {
+          "pos": 9,
+          "marque": "Schneider",
+          "code": "GVAE11",
+          "description": "GVAE11",
+          "qte_commandee": 5,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 5,
+          "qte_a_suivre": 0
+        },
+        {
+          "pos": 11,
+          "marque": "Hager",
+          "code": "SFT240",
+          "description": "2P 40A Centre Off Changeover , T",
+          "qte_commandee": 6,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 6,
+          "qte_a_suivre": 0
+        }
+      ]
+    },
+    {
+      "header": {
+        "commande_client": "CF0-200206733",
+        "commande_linear": "CO35356",
+        "date_commande": "11/06/2025"
+      },
+      "items": [
+        {
+          "pos": 8,
+          "marque": "Schneider",
+          "code": "GVAE11",
+          "description": "GVAE11",
+          "qte_commandee": 8,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 8,
+          "qte_a_suivre": 0
+        },
+        {
+          "pos": 12,
+          "marque": "Hager",
+          "code": "SFT240",
+          "description": "2P 40A Centre Off Changeover , T",
+          "qte_commandee": 2,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 2,
+          "qte_a_suivre": 0
+        }
+      ]
+    },
+    {
+      "header": {
+        "commande_client": "CF0-200206773",
+        "commande_linear": "CO35425",
+        "date_commande": "13/06/2025"
+      },
+      "items": [
+        {
+          "pos": 9,
+          "marque": "Schneider",
+          "code": "GVAE11",
+          "description": "GVAE11",
+          "qte_commandee": 33,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 33,
+          "qte_a_suivre": 0
+        },
+        {
+          "pos": 15,
+          "marque": "Hager",
+          "code": "SFT240",
+          "description": "2P 40A Centre Off Changeover , T",
+          "qte_commandee": 7,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 7,
+          "qte_a_suivre": 0
+        }
+      ]
+    },
+    {
+      "header": {
+        "commande_client": "CF0-200206824",
+        "commande_linear": "CO35488",
+        "date_commande": "17/06/2025"
+      },
+      "items": [
+        {
+          "pos": 9,
+          "marque": "Schneider",
+          "code": "A9R21440",
+          "description": "IID 4P 40A 30MA A",
+          "qte_commandee": 4,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 4,
+          "qte_a_suivre": 0
+        }
+      ]
+    },
+    {
+      "header": {
+        "commande_client": "CF0-200206871",
+        "commande_linear": "CO35556",
+        "date_commande": "19/06/2025"
+      },
+      "items": [
+        {
+          "pos": 14,
+          "marque": "Schneider",
+          "code": "A9R21440",
+          "description": "IID 4P 40A 30MA A",
+          "qte_commandee": 1,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 1,
+          "qte_a_suivre": 0
+        },
+        {
+          "pos": 18,
+          "marque": "Schneider",
+          "code": "GVAE11",
+          "description": "GVAE11",
+          "qte_commandee": 10,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 10,
+          "qte_a_suivre": 0
+        }
+      ]
+    },
+    {
+      "header": {
+        "commande_client": "CF0-200206897",
+        "commande_linear": "CO35590",
+        "date_commande": "20/06/2025"
+      },
+      "items": [
+        {
+          "pos": 7,
+          "marque": "ABB",
+          "code": "4TBA831025C0100",
+          "description": "4TBA831025C0100",
+          "qte_commandee": 1,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 1,
+          "qte_a_suivre": 0
+        }
+      ]
+    },
+    {
+      "header": {
+        "commande_client": "CF0-200206900",
+        "commande_linear": "CO35593",
+        "date_commande": "23/06/2025"
+      },
+      "items": [
+        {
+          "pos": 8,
+          "marque": "Schneider",
+          "code": "GVAE11",
+          "description": "GVAE11",
+          "qte_commandee": 166,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 166,
+          "qte_a_suivre": 0
+        }
+      ]
+    },
+    {
+      "header": {
+        "commande_client": "CF0-200207000",
+        "commande_linear": "CO35729",
+        "date_commande": "27/06/2025"
+      },
+      "items": [
+        {
+          "pos": 5,
+          "marque": "Schneider",
+          "code": "A9R21440",
+          "description": "IID 4P 40A 30MA A",
+          "qte_commandee": 20,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 20,
+          "qte_a_suivre": 0
+        }
+      ]
+    },
+    {
+      "header": {
+        "commande_client": "CF0-200207066",
+        "commande_linear": "CO35820",
+        "date_commande": "02/07/2025"
+      },
+      "items": [
+        {
+          "pos": 11,
+          "marque": "Hager",
+          "code": "NGN440",
+          "description": "NGN440",
+          "qte_commandee": 1,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 1,
+          "qte_a_suivre": 0
+        }
+      ]
+    },
+    {
+      "header": {
+        "commande_client": "CF0-200207360",
+        "commande_linear": "CO36251",
+        "date_commande": "21/07/2025"
+      },
+      "items": [
+        {
+          "pos": 1,
+          "marque": "Wago",
+          "code": "2273-205",
+          "description": "COMPACT splicing connector for",
+          "qte_commandee": 900,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 900,
+          "qte_a_suivre": 0
+        },
+        {
+          "pos": 2,
+          "marque": "Schneider",
+          "code": "A9C15030",
+          "description": "ICT plus 20A 1P Uc 230VAC",
+          "qte_commandee": 1,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 1,
+          "qte_a_suivre": 0
+        },
+        {
+          "pos": 3,
+          "marque": "Schneider",
+          "code": "A9S65292",
+          "description": "A9S65292",
+          "qte_commandee": 1,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 1,
+          "qte_a_suivre": 0
+        },
+        {
+          "pos": 4,
+          "marque": "Schneider",
+          "code": "CA2KN40P7",
+          "description": "Control relay 4NO contacts",
+          "qte_commandee": 1,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 1,
+          "qte_a_suivre": 0
+        },
+        {
+          "pos": 5,
+          "marque": "Legrand",
+          "code": "LEGRAND031950",
+          "description": "* PACK OF 100 * SCREW ON BA",
+          "qte_commandee": 16,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 16,
+          "qte_a_suivre": 0
+        },
+        {
+          "pos": 6,
+          "marque": "Legrand",
+          "code": "LEGRAND037667",
+          "description": "* Pack of 250 * Ferrules in strips S",
+          "qte_commandee": 1,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 1,
+          "qte_a_suivre": 0
+        },
+        {
+          "pos": 7,
+          "marque": "Legrand",
+          "code": "LEGRAND050342",
+          "description": "LEGRAND050342",
+          "qte_commandee": 40,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 40,
+          "qte_a_suivre": 0
+        },
+        {
+          "pos": 8,
+          "marque": "Schneider",
+          "code": "NSYTBS16128",
+          "description": "NSYTBS16128",
+          "qte_commandee": 1,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 1,
+          "qte_a_suivre": 0
+        },
+        {
+          "pos": 9,
+          "marque": "Schneider",
+          "code": "XALD05",
+          "description": "Control Station 5way emty",
+          "qte_commandee": 2,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 2,
+          "qte_a_suivre": 0
+        },
+        {
+          "pos": 10,
+          "marque": "Schneider",
+          "code": "XB4BG21",
+          "description": "KeySw 2Pos 1NO keyremL",
+          "qte_commandee": 18,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 18,
+          "qte_a_suivre": 0
+        },
+        {
+          "pos": 11,
+          "marque": "Schneider",
+          "code": "XB4BVB5",
+          "description": "Pilotlite 24V Yel LED",
+          "qte_commandee": 17,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 17,
+          "qte_a_suivre": 0
+        },
+        {
+          "pos": 12,
+          "marque": "Schneider",
+          "code": "XB5AS8445",
+          "description": "PB Estop40mmtrigact Turnrel1NO",
+          "qte_commandee": 10,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 10,
+          "qte_a_suivre": 0
+        }
+      ]
+    },
+    {
+      "header": {
+        "commande_client": "CF0-200207368",
+        "commande_linear": "CO36268",
+        "date_commande": "22/07/2025"
+      },
+      "items": [
+        {
+          "pos": 1,
+          "marque": "Schneider",
+          "code": "A9C20732",
+          "description": "iCT25A 2NO 230/240Vac 50Hz c",
+          "qte_commandee": 12,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 12,
+          "qte_a_suivre": 0
+        },
+        {
+          "pos": 2,
+          "marque": "Schneider",
+          "code": "A9E18322",
+          "description": "ACTI9 IIL SINGLE INDICATOR LI",
+          "qte_commandee": 4,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 4,
+          "qte_a_suivre": 0
+        },
+        {
+          "pos": 3,
+          "marque": "Schneider",
+          "code": "A9F74102",
+          "description": "IC60N 1P BREAKER 2A CURVE",
+          "qte_commandee": 9,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 9,
+          "qte_a_suivre": 0
+        },
+        {
+          "pos": 4,
+          "marque": "Schneider",
+          "code": "A9F75310",
+          "description": "Acti9, iC60N circuit breaker 3P 10",
+          "qte_commandee": 3,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 3,
+          "qte_a_suivre": 0
+        },
+        {
+          "pos": 5,
+          "marque": "Schneider",
+          "code": "A9F75316",
+          "description": "IC60N BREAKER 3P 16A D CUR",
+          "qte_commandee": 4,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 4,
+          "qte_a_suivre": 0
+        },
+        {
+          "pos": 6,
+          "marque": "Schneider",
+          "code": "A9N15651",
+          "description": "A9N15651",
+          "qte_commandee": 1,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 1,
+          "qte_a_suivre": 0
+        },
+        {
+          "pos": 7,
+          "marque": "Hager",
+          "code": "GP413P",
+          "description": "PLAIN DOOR FOR ENCLOSURE",
+          "qte_commandee": 4,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 4,
+          "qte_a_suivre": 0
+        },
+        {
+          "pos": 8,
+          "marque": "Schneider",
+          "code": "LC1D25V7",
+          "description": "CONT 25A 400V50/60Hz",
+          "qte_commandee": 2,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 2,
+          "qte_a_suivre": 0
+        },
+        {
+          "pos": 9,
+          "marque": "Schneider",
+          "code": "LE1D09V7",
+          "description": "DOL STARTER 9A 380/400V 50/6",
+          "qte_commandee": 10,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 10,
+          "qte_a_suivre": 0
+        },
+        {
+          "pos": 10,
+          "marque": "Schneider",
+          "code": "LRD06",
+          "description": "OVERLOAD RELAY 1 to 1.7A",
+          "qte_commandee": 11,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 11,
+          "qte_a_suivre": 0
+        },
+        {
+          "pos": 11,
+          "marque": "Schneider",
+          "code": "XB5AD33",
+          "description": "SelSw 3Pos STD/Hdle 2NO",
+          "qte_commandee": 10,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 10,
+          "qte_a_suivre": 0
+        },
+        {
+          "pos": 12,
+          "marque": "Schneider",
+          "code": "ZB4BV04",
+          "description": "PLight Head Red BA9",
+          "qte_commandee": 8,
+          "precedemment_livree": 0,
+          "qte_livree_ce_jour": 8,
+          "qte_a_suivre": 0
+        }
+      ]
+    }
+  ]
+}
